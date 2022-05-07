@@ -1,0 +1,67 @@
+:root{
+  --spinner-size: 250px; /* change the size of the spinner */
+  --loading-screen-background: #1C1C1C; /* change the background color of the loading screen */
+  --text-color: white; /* change the color used for the bottom text of the loading screen */
+}
+
+.spinner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-screen{
+    background-color: var(--loading-screen-background, #1C1C1C);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: 500;
+    cursor: none;
+}
+
+.spinner {
+    width: var(--spinner-size, 64px) ;
+    height: var(--spinner-size, 64px) ;
+    background: linear-gradient(180deg, #f8ff91 0%, rgba(0, 0, 0, 0.1) 25%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 2s cubic-bezier(.52,.1,.27,.87) infinite;
+    position: relative;
+}
+
+.spinner::after {
+    content: "";
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 50%;
+    background: var(--loading-screen-background, #1C1C1C);
+    z-index: 01;
+}
+.spinner-container img{
+    height: calc(var(--spinner-size, 64px) / 100 * 75);
+    width: calc(var(--spinner-size, 64px) / 100 * 75);
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 02;
+	object-position: center;
+}
+.loading-screen p{
+    margin-top: 20px;
+    color: var(--text-color, white);
+    opacity: .5;
+    font-weight: 300;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

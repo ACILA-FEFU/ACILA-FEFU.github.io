@@ -10,6 +10,7 @@
 
     <link href="assets/m3/m3.core.min.css" rel="stylesheet"/>
     <link href="assets/m3/m3.colors.min.css" rel="stylesheet"/>
+    <link href="assets/loader/loader.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
@@ -19,19 +20,23 @@
 
 </head>
 <body>
+    <div class="loading-screen" id="loading-screen">
+        <div class="spinner-container">
+          <img src="assets/logo.jpg"/>
+          <div class="spinner"></div>
+        </div>
+        <p>Cargando recursos...</p>
+    </div>
+
     <header class="m3-container-fw m3-full-screen m3-parallax m3-text-white "
     style="background-image: url('assets/acila-collage.jpg'); background-size: cover; background-position: top;">
-        <section class="m3-padding-top-4x">
-            <article class="m3-row">
-                <div class="m3-item">
-                    <div class="m3-container m3-text-center m3-large">
-                        <img src="assets/logo.jpg" class="m3-circle animate__animated animate__jackInTheBox" width="200">
-                        <h1 class="m3-margin-top-2x animate__animated animate__bounce" style="font-size: 3em;">
-                            АСИЛА
-                        </h1>
-                    </div>
-                </div>
-            </article>
+        <section class="">
+            <div class="m3-display-middle m3-text-center m3-large">
+                <img src="assets/logo.jpg" class="m3-circle animate__animated animate__jackInTheBox" width="200">
+                <h1 class="m3-margin-top-2x animate__animated animate__bounce" style="font-size: 3em; letter-spacing: 5px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    АСИЛА | AHL
+                </h1>
+            </div>
         </section>
 
         <span class="m3-display-bottom m3-w-100 m3-text-center m3-padding-2x m3-black crystal-5"><i>АССОЦАЦИЯ СТУДЕНТОВ ИСПАНОГОВОРЯЩИХ СТРАН ЛАТИНСКОЙ АМЕРИКИ</i></span>
@@ -460,8 +465,8 @@
         </figure>
         <h2 class="m3-margin-bottom-4x">Acerca de la Universidad Federal del Lejano Oriente (FEFU)</h2>
 
-        <article class="m3-media items-center">
-            <section class="m3-media-content m3-margin-right-3x m3-large">
+        <article class="m3-row space-around">
+            <section class="m3-item">
                 <p>
                     La FEFU es portadora de las tradiciones de la cultura clásica, la ciencia y la educación rusas. La Universidad Federal del Lejano Oriente tiene sus orígenes en 1899, cuando se fundó el Instituto Oriental en Vladivostok.
                 </p> 
@@ -475,13 +480,20 @@
                     Ser un vínculo o un puente cultural entre Rusia y esta parte del mundo sigue siendo uno de los principales objetivos de la FEFU. Por ello, nuestra Universidad no es sólo un camino hacia tu futuro profesional, sino también un camino hacia el futuro de todo el país, donde todos los jóvenes motivados, trabajadores y con talento encontrarán el lugar que les corresponde.
                 </p>
             </section>
-            <img src="assets/fefu.jpg" class="m3-media-figure" style="max-width: 400px;">
-        </article>
- 
-        <article class="m3-media items-center">
-            <img src="assets/estudiantes-ext.jpg" class="m3-media-figure" style="max-width: 500px;">
 
-            <section class="m3-media-content m3-margin-left-3x m3-large">
+            <figure class="m3-item size-4">
+                <img src="assets/fefu.jpg" class="" style="max-width: 400px;">
+            </figure>
+        </article>
+
+
+        <article class="m3-row space-around">
+
+            <figure class="m3-item size-4">
+                <img src="assets/estudiantes-ext.jpg" class="" style="max-width: 500px;">
+            </figure>
+
+            <section class="m3-item">
                 <p>
                     Ser un estudiante de FEFU significa que tienes una oportunidad de por vida para superar tus ambiciones. Por esta razón, más de 3500 estudiantes internacionales han elegido FEFU como destino para su educación superior.
                 </p>
@@ -492,12 +504,15 @@
                     Los estudiantes viven en el campus de la FEFU que se encuentra en una encantadora isla rodeada de un impresionante paisaje verde, lago, mar, flujo de agua, fuente y pequeñas colinas.ExploreLa extraordinaria ubicación y la modernidad de la FEFU la han convertido en un destino para los principales eventos internacionales y políticos, como el Foro Económico Oriental, donde los líderes de la región de Asia y el Pacífico se reúnen anualmente en la Universidad Federal del Lejano Oriente.
                 </p>
             </section>
+
         </article>
 
-        <div class="m3-padding-2x m3-border-bottom">
-            <h2 class="m3-margin-bottom-4x">Ubicación</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23333.23528601915!2d131.8818713!3d43.0276608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb3f542efc5c721%3A0x7c3e6d492c991315!2z0JTQktCk0KM!5e0!3m2!1sru!2sru!4v1651647774757!5m2!1sru!2sru" height="300" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <article class="m3-row">
+            <div class="m3-item m3-border-bottom">
+                <h2 class="m3-margin-bottom-4x">Ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23333.23528601915!2d131.8818713!3d43.0276608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb3f542efc5c721%3A0x7c3e6d492c991315!2z0JTQktCk0KM!5e0!3m2!1sru!2sru!4v1651647774757!5m2!1sru!2sru" height="300" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
         
     </article>
 
@@ -584,6 +599,9 @@
 
 
     <script src="https://kit.fontawesome.com/fee6a207c2.js" crossorigin="anonymous"></script>
+
+    <script src="assets/loader/loader.js"></script>
+
     <script>
         let acc = document.getElementsByClassName("m3-accordion"); let i;
         for (i = 0; i < acc.length; i++) {

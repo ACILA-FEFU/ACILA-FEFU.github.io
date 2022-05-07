@@ -15,12 +15,55 @@
 
     <style>
         html{scroll-behavior: smooth;}
+        #ApuntesDiv{background-image: url('media/space.jpg'); background-size: cover;}
+        #RussiaFlag{ max-width: 25px;}
+        .apuntes-send{color: #ff7777;}
+        .mlaq-title{letter-spacing: 7px;}
+
+        /* Mobile */
+        @media (max-width: 640px) {
+            #AHero{ background-image: url('media/bg2.jpg'); background-size: 250% 100%; font-size: 1rem;}
+            #ACILA{ width: 100%;}
+            #ACILA h3, #ACILA h2{ font-size: 1rem;}
+            #HeroLogo{ width: 100px;}
+
+            #RussiaFlag{ max-width: 15px;}
+            #ApuntesDiv{ height: 170px; background-size: 100% 100%;}
+            #ApuntesDiv > .m3-display-left{ padding-left: 1rem;}
+            .apuntes-title{ font-size: 0.8rem;}
+            .apuntes-send{ font-size: 0.5rem; letter-spacing: 0.2rem;}
+
+            .mlaq-title{ font-size: 1.3rem;}
+            .mlaq-title h1{ font-size: 1.3rem;}
+            .mlaq-title p{ font-size: 0.5rem; letter-spacing: 3px;}
+        }
+
+        /* Phablet / Tablet */
+        @media (min-width: 641px) and (max-width: 1024px) {
+            #RussiaFlag{ max-width: 35px;}
+            #ApuntesDiv{ height: 300px; background-size: 100% 100%;}
+            #ApuntesDiv > .m3-display-left{ padding-left: 2.4rem;}
+            .apuntes-title{ font-size: 1.3rem;}
+            .apuntes-send{ font-size: 0.7rem; letter-spacing: 0.4rem;}
+        }
+
+        /* Desktop / TV */
+        @media (min-width: 1100px) {
+            #RussiaFlag{ max-width: 50px;}
+            #ApuntesDiv{ height: 700px; background-size: cover;}
+            #ApuntesDiv > .m3-display-left{ padding-left: 3rem;}
+            .apuntes-title{ font-size: 2.5rem;}
+            .apuntes-send{ font-size: 1.3rem; letter-spacing: 0.7rem;}
+
+            .mlaq-title{ font-size: 1.3rem;}
+            .mlaq-title h1{ font-size: 2.3rem;}
+            .mlaq-title p{ font-size: 1.3rem; letter-spacing: 4px;}
+        }
     </style>
 
 </head>
 <body class="m3-space-gray">
-    <header class="m3-container-fw m3-full-screen m3-parallax m3-text-white"
-    style="background-image: url('media/bg2.jpg'); background-size: cover;">
+    <header class="m3-container-fw m3-full-screen m3-parallax m3-text-white" id="AHero">
 
         <section class="m3-padding-2x">
             <span class="m3-large"><i class="fa-solid fa-location-dot m3-yellow m3-round m3-padding m3-margin-right"></i> ДВФУ, г. Владивостока</span>
@@ -30,10 +73,10 @@
             <span id="TimeWelcome" class="m3-black crystal-3 m3-mobile-small m3-padding-2x"></span>
         </div>
 
-        <section class="m3-display-middle">
+        <section class="m3-display-middle m3-w-100-mobile">
             <article class="m3-media items-center m3-text-center">
-                <img src="../assets/fa-logo.png" class="m3-media-figure" width="250">
-                <section class="m3-media-content m3-padding-left-2x">
+                <img src="../assets/fa-logo.png" class="m3-media-figure" id="HeroLogo">
+                <section class="m3-media-content m3-padding-left-2x" id="ACILA">
                     <h2>АСИЛА | Formación Académica</h2>
                     <h3 class="m3-text-yellow animate__animated animate__lightSpeedInRight">Ningún conocimiento humano puede ir más allá de su experiencia.</h3>
                 </section>
@@ -43,16 +86,16 @@
         <span class="m3-display-bottom m3-w-100 m3-text-center m3-padding-2x m3-black crystal-5">
             <figure>
                 <img src="../assets/logo.jpg" class="m3-margin-right m3-circle" width="65">
-                <a href="../index.html" class="m3-hover-text-skyblue"><i class="m3-large">ASOCIACIÓN HISPANOHABLANTES LATINOAMERICANOS</i></a>
+                <a href="../index.html" class="m3-hover-text-skyblue"><i class="m3-desktop-large">ASOCIACIÓN HISPANOHABLANTES LATINOAMERICANOS</i></a>
             </figure>
         </span>
     </header>
 
 
     <div class="m3-btn-group m3-mobile-show m3-margin-bottom-4x">
-        <a href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ" class="m3-btn m3-w-100 m3-skyblue"><i class="fa-solid fa-cloud"></i> Base de Datos</a>
-        <a href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT" class="m3-btn  m3-w-100 m3-light-green"> <i class="fa-brands fa-whatsapp" style="font-size: 20px; vertical-align: middle;"></i> Canal informativo </a>
-        <a href="https://www.instagram.com/acila_fefu/" class="m3-btn m3-w-100 m3-pink"> <i class="fa-brands fa-instagram" style="font-size: 20px; vertical-align: middle;"></i> Síguenos </a>
+        <a class="m3-btn m3-w-100 m3-transparent m3-border m3-border-skyblue" href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ"><i class="fa-solid fa-cloud"></i> Base de Datos</a>
+        <a class="m3-btn m3-w-100 m3-transparent m3-border m3-border-emerald" href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT" href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT"> <i class="fa-brands fa-whatsapp" style="font-size: 20px; vertical-align: middle;"></i> Canal informativo </a>
+        <a class="m3-btn m3-w-100 m3-transparent m3-border m3-border-fuchsia" href="https://www.instagram.com/acila_fefu/"> <i class="fa-brands fa-instagram" style="font-size: 20px; vertical-align: middle;"></i> Síguenos </a>
     </div>
 
     <nav class="m3-container m3-margin-bottom-2x">
@@ -65,10 +108,10 @@
 
     
 
-    <section class="m3-jumbo">
-        <article class="">
+    <section class="m3-jumbo mlaq-section">
+        <article class="mlaq-title">
             <h1 class="m3-text-gradient-vintage" style="letter-spacing: 5px;">SECTOR MLAQ</h1>
-            <p class="m3-adaptive-text">
+            <p class="">
                 Matemática, Latin, Anatomía, Química. <br>
                 TODO EN UN MISMO LUGAR.
             </p>
@@ -79,7 +122,7 @@
                 <article class="m3-card">
                     <img src="media/mlaq/m.jfif" class="m3-card-media m3-padding-2x m3-dark-gray">
                     <div class="m3-card-content">
-                        <h2 style="letter-spacing: 7px;">MATEMÁTICA</h2>
+                        <h2 class="mlaq-title">MATEMÁTICA</h2>
                         <p>
                             <a class="m3-bold m3-large m3-text-yellow" style="letter-spacing: 7px;" href="#">
                                 VER MÁS
@@ -95,7 +138,7 @@
                 <article class="m3-card">
                     <img src="media/mlaq/l.jfif" class="m3-card-media m3-padding-2x m3-dark-gray">
                     <div class="m3-card-content">
-                        <h2 style="letter-spacing: 7px;">LATÍN</h2>
+                        <h2 class="mlaq-title">LATÍN</h2>
                         <p>
                             <a class="m3-bold m3-large m3-text-yellow" style="letter-spacing: 7px;" href="#">
                                 VER MÁS
@@ -112,7 +155,7 @@
                 <article class="m3-card">
                     <img src="media/mlaq/a.jfif" class="m3-card-media m3-padding-2x m3-dark-gray">
                     <div class="m3-card-content">
-                        <h2 style="letter-spacing: 7px;">ANATOMÍA</h2>
+                        <h2 class="mlaq-title">ANATOMÍA</h2>
                         <p>
                             <a class="m3-bold m3-large m3-text-yellow" style="letter-spacing: 7px;" href="#">
                                 VER MÁS
@@ -128,7 +171,7 @@
                 <article class="m3-card">
                     <img src="media/mlaq/q.jfif" class="m3-card-media m3-padding-2x m3-dark-gray">
                     <div class="m3-card-content">
-                        <h2 style="letter-spacing: 7px;">QUÍMICA</h2>
+                        <h2 class="mlaq-title">QUÍMICA</h2>
                         <p>
                             <a class="m3-bold m3-large m3-text-yellow" style="letter-spacing: 7px;" href="#">
                                 VER MÁS
@@ -150,17 +193,17 @@
             <h1>¿No sabes qué escuchar mientras estudias?</h1>
         </div>
 
-        <section class="m3-row">
-            <div class="m3-item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Kx3Kk0bPDUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section class="m3-row space-around">
+            <div class="m3-item m3-padding-2x m6">
+                <iframe class="m3-w-100" height="300px" src="https://www.youtube.com/embed/Kx3Kk0bPDUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <div class="m3-item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nHeuZ8EIbSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="m3-item m3-padding-2x m6">
+                <iframe class="m3-w-100" height="300px" src="https://www.youtube.com/embed/nHeuZ8EIbSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <div class="m3-item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/jrTMMG0zJyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="m3-item m3-padding-2x m6">
+                <iframe class="m3-w-100" height="300px" src="https://www.youtube.com/embed/jrTMMG0zJyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
     </article>
@@ -175,25 +218,24 @@
         </section>
 
 
-        <figure class="m3-container-fw m3-center">
-            <img src="media/space.jpg" class="m3-w-100">
-            <div class="m3-display-middle">
-                <h2>Esta es nuestra experiencia en Rusia <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" width="50"></h2>
-                <h3 class="">
+        <article class="m3-container-fw" id="ApuntesDiv">
+            <div class="m3-display-left">
+                <h3 class="apuntes-title">Esta es nuestra experiencia en Rusia <img id="RussiaFlag" src="https://cdn.countryflags.com/thumbs/russia/flag-400.png"></h3>
+                <h3 class="apuntes-title">
                     Trabajemos juntos para trascender.
                 </h3>
                 <p>
-                    <a class="m3-bold m3-large" style="letter-spacing: 5px; color: #ff7777;" href="#">
+                    <a class="apuntes-send m3-bold" href="#">
                         Comparte tus apuntes
                         <i class="fa-solid fa-note-sticky"></i>
                     </a>
                 </p>
             </div>
-        </figure>
+        </article>
     </article>
 
     <footer class="m3-padding-2x m3-black">
-        <div class="m3-center m3-text-grey">
+        <div class="m3-center m3-text-grey m3-mobile-hide">
             <a href="../index.html#Nosotros" class="m3-horizontal-padding m3-hover-text-white"><i class="fa-solid fa-user-group"></i> Nosotros</a>
             <a href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ" class="m3-horizontal-padding m3-hover-text-white"><i class="fa-solid fa-cloud"></i> Base de Datos</a>
             <a href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT" class="m3-horizontal-padding m3-hover-text-white"> <i class="fa-brands fa-whatsapp" style="font-size: 20px; vertical-align: middle;"></i> Canal informativo </a>
