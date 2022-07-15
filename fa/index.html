@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../assets/logo.jpg">
+    <link rel="shortcut icon" href="../assets/acila-no-txt.png">
     <title>ACILA | Departamento de Formación Académica</title>
 
     <link href="../assets/m3/m3.core.min.css" rel="stylesheet"/>
     <link href="../assets/m3/m3.colors.min.css" rel="stylesheet"/>
+    <link href="../assets/css/paleta.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <style>
         html{scroll-behavior: smooth;}
-        #AHero{ background-image: url('media/bg.jpg');}
+        #AHero{ background: url('../assets/bgs/fahero.jpg'); background-attachment: fixed;}
         #ApuntesDiv{background-image: url('media/space.jpg');}
         #RussiaFlag{ max-width: 25px;}
         .apuntes-send{color: #ff7777;}
@@ -23,7 +24,6 @@
 
         /* Mobile */
         @media (max-width: 640px) {
-            #AHero{ background-image: url('media/bg-phone.jpg');}
             #ACILA h3, #ACILA h2{ font-size: 0.8rem;}
             #HeroLogo{ width: 120px;}
             .logo-hero-footer{ width: 40px;}
@@ -55,7 +55,8 @@
 
         /* Desktop / TV */
         @media (min-width: 1100px) {
-            .logo-hero-footer{ width: 65px;}
+            .logo-hero-footer{ width: 255px;}
+            #HeroLogo{ width: 250px;}
 
             #RussiaFlag{ max-width: 50px;}
             #ApuntesDiv{ height: 500px; background-size: 100%;}
@@ -72,29 +73,24 @@
 </head>
 <body class="m3-space-gray">
     <header class="m3-container-fw m3-full-screen m3-parallax m3-text-white" id="AHero">
-
-        <section class="m3-padding-2x">
-            <span class="m3-large"><i class="fa-solid fa-location-dot m3-yellow m3-round m3-padding m3-margin-right"></i> ДВФУ, г. Владивостока</span>
-        </section>
-
         <div class="m3-padding">
-            <span id="TimeWelcome" class="m3-black crystal-3 m3-mobile-small m3-padding-2x"></span>
+            <span id="TimeWelcome" class="m3-black crystal m3-mobile-small m3-padding-2x"></span>
         </div>
 
-        <section class="m3-display-middle m3-w-100-mobile m3-w-75-tablet">
-            <article class="m3-media items-center m3-text-center">
-                <img src="../assets/fa-logo.png" class="m3-media-figure" id="HeroLogo">
+        <section class="m3-display-left m3-w-100-mobile m3-w-75-tablet m3-w-50-desktop">
+            <article class="m3-media items-center">
+                <img src="../assets/acila-no-txt.png" class="m3-media-figure" id="HeroLogo">
                 <section class="m3-media-content m3-padding-left-2x" id="ACILA">
-                    <h2>АСИЛА | Formación Académica</h2>
-                    <h3 class="m3-text-yellow animate__animated animate__lightSpeedInRight">Ningún conocimiento humano puede ir más allá de su experiencia.</h3>
+                    <h2>Formación Académica</h2>
+                    <h3 class="lt-txt-orange-1 animate__animated animate__lightSpeedInRight">Ningún conocimiento humano puede ir más allá de su experiencia.</h3>
                 </section>
             </article>
         </section>
 
         <span class="m3-display-bottom m3-w-100 m3-text-center m3-padding-2x m3-black crystal-5">
             <figure>
-                <img src="../assets/logo.jpg" class="m3-margin-right m3-circle logo-hero-footer">
-                <a href="../index.html" class="m3-hover-text-skyblue"><i class="m3-desktop-large m3-mobile-small">ASOCIACIÓN HISPANOHABLANTES LATINOAMERICANOS</i></a>
+                <img src="../assets/acila-txt.png" class="m3-margin-right m3-circle logo-hero-footer">
+                <a href="../index.html" class="m3-hover-text-gold"><i class="m3-desktop-large m3-mobile-small">ASOCIACIÓN HISPANOHABLANTES LATINOAMERICANOS</i></a>
             </figure>
         </span>
     </header>
@@ -243,28 +239,21 @@
     </article>
 
     <footer class="m3-padding-2x m3-black">
-        <div class="m3-center m3-text-grey m3-mobile-hide m3-tablet-hide">
-            <a href="../index.html#Nosotros" class="m3-horizontal-padding m3-hover-text-white"><i class="fa-solid fa-user-group"></i> Nosotros</a>
-            <a href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ" class="m3-horizontal-padding m3-hover-text-white"><i class="fa-solid fa-cloud"></i> Base de Datos</a>
-            <a href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT" class="m3-horizontal-padding m3-hover-text-white"> <i class="fa-brands fa-whatsapp" style="font-size: 20px; vertical-align: middle;"></i> Canal informativo </a>
-            <a href="https://www.instagram.com/acila_fefu/" class="m3-horizontal-padding m3-hover-text-white"> <i class="fa-brands fa-instagram" style="font-size: 20px; vertical-align: middle;"></i> Síguenos </a>
-        </div>
 
         <article class="h3 m3-text-center m3-margin-top-3x">
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_Vladivostok%2C_Russia.png" width="175" class="m3-margin-bottom-2x m3-round-3x"><br>
-            <span class="m3-text-emerald">Hecho en </span><span class="m3-text-white">Vladivostok</span>
+            <span class="lt-txt-skyblue">Hecho en </span><span class="m3-text-white">Vladivostok</span>
         </article>
         <section class="m3-center m3-text-center m3-padding-2x m3-text-gray">
-            <p class="m3-padding">
+            <p class="m3-padding m3-mobile-small">
                 ACILA © 2022 <br>
-                Este sitio es hospedado por <a href="https://pages.github.com/" class="m3-text-white">Github Pages</a><br>
-                Diseñado y desarrollado por <a href="https://instagram.com/daniel_castillo.7" class="m3-text-light-green">Daniel Castillo</a>
+                Este sitio es hospedado por <a href="https://pages.github.com/" class="m3-text-light-gray">Github Pages</a><br>
+                Diseñado y desarrollado por <a href="https://instagram.com/daniel_castillo.7" class="lt-txt-orange-1">Daniel Castillo</a>
             </p>
         </section>
         <section class="m3-center m3-mobile-small">
-            <a href="#" class="m3-btn">Utilidades</a>
             <a href="https://2gis.ru/vladivostok" class="m3-btn">Mapa de la ciudad</a>
-            <a href="https://www.dvfu.ru/" class="m3-btn">DVFU</a>
+            <a href="https://www.dvfu.ru/" class="m3-btn">Sitio DVFU</a>
         </section>
     </footer>
 

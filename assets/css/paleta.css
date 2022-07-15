@@ -1,0 +1,55 @@
+.lt-txt-blue-1 { color: rgba(75, 79, 163, 1); }
+.lt-txt-blue-2 { color: rgba(35, 47, 117, 1); }
+.lt-txt-skyblue { color: rgba(61, 142, 165, 1); }
+.lt-txt-orange-1 { color: rgba(242, 145, 86, 1); }
+.lt-txt-orange-2 { color: rgba(242, 86, 47, 1); }
+
+.lt-h-txt-blue-1:hover { color: rgba(75, 79, 163, 1); }
+.lt-h-txt-blue-2:hover { color: rgba(35, 47, 117, 1); }
+.lt-h-txt-skyblue:hover { color: rgba(61, 142, 165, 1); }
+.lt-h-txt-orange-1:hover { color: rgba(242, 145, 86, 1); }
+.lt-h-txt-orange-2:hover { color: rgba(242, 86, 47, 1); }
+
+.lt-blue-1 { background-color: rgba(75, 79, 163, 1); }
+.lt-blue-2 { background-color: rgba(35, 47, 117, 1); }
+.lt-skyblue { background-color: rgba(61, 142, 165, 1); }
+.lt-orange-1 { background-color: rgba(242, 145, 86, 1); }
+.lt-orange-2 { background-color: rgba(242, 86, 47, 1); }
+
+.lt-c-blue-1 { background-color: rgba(75, 79, 163, 0.5); }
+.lt-c-blue-2 { background-color: rgba(35, 47, 117, 0.5); }
+.moda-4 { background-color: rgba(61, 142, 165, 0.5); }
+.lt-c-orange-1 { background-color: rgba(242, 145, 86, 0.5); }
+.lt-c-orange-2 { background-color: rgba(242, 86, 47, 0.5); }
+
+.lt-h-blue-1:hover { background-color: rgba(75, 79, 163, 1); }
+.lt-h-blue-2:hover { background-color: rgba(35, 47, 117, 1); }
+.lt-h-skyblue:hover { background-color: rgba(61, 142, 165, 1); }
+.lt-h-orange-1:hover { background-color: rgba(242, 145, 86, 1); }
+.lt-h-orange-2:hover { background-color: rgba(242, 86, 47, 1); }
+
+
+/* Color Theme Swatches in RGBA */
+.moda-1 { background-color: rgba(242, 7, 93, 1); }
+.moda-2 { background-color: rgba(4, 242, 242, 1); }
+.moda-3 { background-color: rgba(4, 242, 198, 1); }
+.moda-4 { background-color: rgba(242, 89, 55, 1); }
+.moda-5 { background-color: rgba(191, 126, 120, 1); }
+
+.moda-h-1:hover { background-color: rgba(242, 7, 93, 1); }
+.moda-h-2:hover { background-color: rgba(4, 242, 242, 1); }
+.moda-h-3:hover { background-color: rgba(4, 242, 198, 1); }
+.moda-h-4:hover { background-color: rgba(242, 89, 55, 1); }
+.moda-h-5:hover { background-color: rgba(191, 126, 120, 1); }
+
+.moda-txt-1 { color: rgba(242, 7, 93, 1); }
+.moda-txt-2 { color: rgba(4, 242, 242, 1); }
+.moda-txt-3 { color: rgba(4, 242, 198, 1); }
+.moda-txt-4 { color: rgba(242, 89, 55, 1); }
+.moda-txt-5 { color: rgba(191, 126, 120, 1); }
+
+.moda-h-txt-1:hover { color: rgba(242, 7, 93, 1); }
+.moda-h-txt-2:hover { color: rgba(4, 242, 242, 1); }
+.moda-h-txt-3:hover { color: rgba(4, 242, 198, 1); }
+.moda-h-txt-4:hover { color: rgba(242, 89, 55, 1); }
+.moda-h-txt-5:hover { color: rgba(191, 126, 120, 1); }

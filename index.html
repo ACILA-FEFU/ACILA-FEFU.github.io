@@ -6,332 +6,601 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACILA FEFU</title>
 
-    <link rel="shortcut icon" href="assets/logo.jpg">
+    <link rel="shortcut icon" href="assets/acila-no-txt.png">
 
     <link href="assets/m3/m3.core.min.css" rel="stylesheet"/>
     <link href="assets/m3/m3.colors.min.css" rel="stylesheet"/>
     <link href="assets/loader/loader.css" rel="stylesheet"/>
+    <link href="assets/timeline/timeline.css" rel="stylesheet"/>
+    <link href="assets/css/paleta.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <style>
         html{scroll-behavior: smooth;}
+        body{background-color: #202020; color: #fff;}
+
+        #LandingBG{
+            background-image: url('assets/bgs/particlesb.jpg'); color: #fff;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Mobile */
+        @media (max-width: 640px) {
+
+        }
+
+        /* Phablet / Tablet */
+        @media (min-width: 641px) and (max-width: 1024px) {
+
+        }
+
+        /* Desktop / TV */
+        @media (min-width: 1100px) {
+
+        }
+
     </style>
 
 </head>
 <body>
-    <div class="loading-screen" id="loading-screen">
+    <!--<div class="loading-screen" id="loading-screen">
         <div class="spinner-container">
           <img src="assets/logo.jpg"/>
           <div class="spinner"></div>
         </div>
         <p>Cargando recursos...</p>
-    </div>
+    </div>-->
+    
+    
+<aside class="m3-sidenav m3-w-100-tablet m3-w-50-desktop m3-w-100-mobile m3-padding-2x" id="Sidenav">
+    <button class="m3-close lt-txt-orange-2 m3-huge" onclick="OverlayContent('Sidenav');">
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-angle-left"></i>
+    </button>
 
-    <header class="m3-container-fw m3-full-screen m3-parallax m3-text-white "
-    style="background-image: url('assets/acila-collage.jpg'); background-size: cover; background-position: top;">
-        <section class="">
-            <div class="m3-display-middle m3-text-center m3-large">
-                <img src="assets/logo.jpg" class="m3-circle animate__animated animate__jackInTheBox" width="200">
-                <h1 class="m3-margin-top-2x animate__animated animate__bounce" style="font-size: 3em; letter-spacing: 5px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-                    АСИЛА | AHL
-                </h1>
+    <figure class="m3-padding-2x m3-margin-top">
+        <img src="assets/acila-txt-black.png" id="AcilaCP" style="width: 250px;"> Panel de Control
+    </figure>
+
+    <section class="m3-card-deck margins">
+        <article class="m3-card m3-silver m3-border" style="max-width: 150px;">
+            <span class="m3-card-media">🧰</span>
+            <div class="m3-card-content m3-white m3-text-center">
+                <a class="m3-hover-text-gold" href="utils.html">Utilidades</a>
             </div>
+        </article>
+
+        <article class="m3-card m3-silver m3-border" style="max-width: 150px;">
+            <span class="m3-card-media">👬</span>
+            <div class="m3-card-content m3-white m3-text-center">
+                <a class="m3-hover-text-gold" href="serv.html">Asistencia</a>
+            </div>
+        </article>
+
+        <article class="m3-card m3-silver m3-border" style="max-width: 150px;">
+            <span class="m3-card-media">☁️</span>
+            <div class="m3-card-content m3-white m3-text-center">
+                <a class="m3-hover-text-gold" href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ">Archivos</a>
+            </div>
+        </article>
+
+        <article class="m3-card m3-silver m3-border" style="max-width: 150px;">
+            <span class="m3-card-media"><i class="fa-brands fa-whatsapp"></i></span>
+            <div class="m3-card-content m3-white m3-text-center">
+                <a class="m3-hover-text-gold" href="https://chat.whatsapp.com/Kvm3yvb7VZD7aCDu0XXnbe"> Información </a>
+            </div>
+        </article>
+
+        <article class="m3-card m3-silver m3-border" style="max-width: 150px;">
+            <span class="m3-card-media"><i class="fa-brands fa-whatsapp"></i></span>
+            <div class="m3-card-content m3-white m3-text-center">
+                <a class="m3-hover-text-gold" href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT"> General </a>
+            </div>
+        </article>
+    </section>
+
+    <section class="m3-padding">
+        <h2 class="m3-vertical-margin-3x">Principales Oficinas</h2>
+       
+        <div class="m3-row">
+            <article class="m3-item">
+                <figure class="m3-container-fw">
+                    <img src="assets/maps/interoffice.jpg" class="m3-w-100">
+                    <a class="m3-padding m3-small moda-4 m3-text-white m3-display-bottom-right" href="assets/maps/interoffice.jpg" download> <i class="fa-solid fa-file-arrow-down"></i> Descargar Imagen</a>
+                </figure>
+
+                
+                <section class="m3-padding-top-2x">
+                    <h4>Oficina Internacional</h4>   
+                    <p class="lt-txt-skyblue">Отдел по работе с иностранными студентами</p>
+                    <p class="m3-bold">Корпус E</p>
+                    <p class="lt-txt-orange-2">E745</p>
+                </section>
+
+            </article>
+
+            <article class="m3-item">
+                <figure class="m3-container-fw">
+                    <img src="assets/maps/visaoffice.jpg" class="m3-w-100">
+                    <a class="m3-padding m3-small moda-4 m3-text-white m3-display-bottom-right" href="assets/maps/visaoffice.jpg" download> <i class="fa-solid fa-file-arrow-down"></i> Descargar Imagen</a>
+                </figure>
+
+                
+                <section class="m3-padding-top-2x">
+                    <h4>Registros y Visado</h4>   
+                    <p class="lt-txt-skyblue">Отдел виз и регистраций</p>
+                    <p class="m3-bold">Корпус E</p>
+                    <p class="lt-txt-orange-2">E744</p>
+                </section>
+
+            </article>
+
+            <article class="m3-item">
+                <figure class="m3-container-fw">
+                    <img src="assets/maps/studentoffice.jpg" class="m3-w-100">
+                    <a class="m3-padding m3-small moda-4 m3-text-white m3-display-bottom-right" href="assets/maps/studentoffice.jpg" download> <i class="fa-solid fa-file-arrow-down"></i> Descargar Imagen</a>
+                </figure>
+
+                
+                <section class="m3-padding-top-2x">
+                    <h4>Oficina de Estudiantes</h4>   
+                    <p class="lt-txt-skyblue">Единый многофункциональный студенческий офис</p>
+                    <p class="m3-bold">Корпус E</p>
+                    <p class="lt-txt-orange-2">E639</p>
+                </section>
+
+            </article>
+        </div>
+       
+        <a class="lt-blue-1 m3-text-white m3-btn" href="https://fefumap.ru/"><i class="fa-solid fa-location"></i> Mapa detallado del campus</a>
+    </section>
+
+    <section class="m3-padding">
+        <h2 class="m3-vertical-margin-3x">Enlaces Relevantes</h2>
+        <ul class="m3-list">
+            <li class="m3-list-item ">
+               Registros y Visado: <a class="lt-txt-blue-1" href="mailto:intervisa@dvfu.ru"><i class="fa-solid fa-envelope"></i> intervisa@dvfu.ru</a>
+            </li>
+            <li class="m3-list-item ">
+               Oficina Internacional: <a class="lt-txt-blue-1" href="mailto:interadvising@dvfu.ru"><i class="fa-solid fa-envelope"></i> interadvising@dvfu.ru</a>
+            </li>
+            <li class="m3-list-item ">
+                Resultados de semestre: <a class="lt-txt-blue-1" href="mailto:documents@dvfu.ru"><i class="fa-solid fa-envelope"></i> documents@dvfu.ru</a>
+             </li>
+        </ul>
+    </section>
+
+    <section class="m3-padding">
+        <h2 class="m3-vertical-margin-3x">Recomendaciones</h2>
+
+        
+
+        <section class="m3-card-deck no-margin">
+            <article class="m3-card m3-silver crystal-3">
+                <div class="m3-card-content m3-text-center">
+                    <a href="https://info.2gis.ru/vladivostok/products/download?utm_source=online&utm_medium=product&utm_campaign=sidebar">
+                        <img src="https://info.2gis.ru/assets/header/color_RUS.svg" width="130">
+                    </a>
+                    
+                    <h5 class="m3-bar-top m3-border-emerald m3-padding-top-2x m3-margin-top-2x">Busca lugares y trasladate por la ciudad</h5>
+                </div>
+            </article>
+                        
+            <article class="m3-card m3-silver crystal-3">
+                <div class="m3-card-content m3-text-center">
+                    <a href="https://protonvpn.com/ru/">
+                        <img src="https://protonvpn.com/assets/img/protonvpn-transparent.svg" width="200">
+                    </a>
+                    
+                    <h5 class="m3-bar-top m3-border-purple m3-padding-top-2x m3-margin-top-3x">VPN para utilizar redes sociales bloqueadas</h5>
+                </div>
+            </article>
+
+            <article class="m3-card m3-silver crystal-3">
+                <div class="m3-card-content m3-text-center">
+                    <a href="https://zenly.com">
+                        <img src="https://www.protarif.info/news/thumbnails/852dea244f28ee74d09550b83cb6dc2a.jpeg" width="100">
+                    </a>
+                    
+                    <h5 class="m3-bar-top m3-border-skyblue m3-padding-top-2x m3-margin-top-2x">Comparte tu ubicación entre tus amigos</h5>
+                </div>
+            </article>
         </section>
+        
+    </section>
 
-        <span class="m3-display-bottom m3-w-100 m3-text-center m3-padding-2x m3-black crystal-5"><i>АССОЦАЦИЯ СТУДЕНТОВ ИСПАНОГОВОРЯЩИХ СТРАН ЛАТИНСКОЙ АМЕРИКИ</i></span>
-    </header>
+</aside>
 
-    <div class="m3-btn-group m3-mobile-show">
-        <a href="#Nosotros" class="m3-btn m3-w-100 m3-blue-gray"><i class="fa-solid fa-person"></i> Nosotros</a>
-        <a href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ" class="m3-btn m3-w-100 m3-skyblue"><i class="fa-solid fa-cloud"></i> Base de Datos</a>
-        <a href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT" class="m3-btn  m3-w-100 m3-light-green"> <i class="fa-brands fa-whatsapp" style="font-size: 20px; vertical-align: middle;"></i> Canal informativo </a>
-        <a href="https://www.instagram.com/acila_fefu/" class="m3-btn m3-w-100 m3-pink"> <i class="fa-brands fa-instagram" style="font-size: 20px; vertical-align: middle;"></i> Síguenos </a>
-    </div>
 
-    <nav class="m3-container m3-margin-bottom-4x">
-        <section class="m3-navcard-content">
-            <a href="#Nosotros" class="m3-btn m3-round-3x m3-blue-gray"><i class="fa-solid fa-person"></i> Nosotros</a>
-            <a href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ" class="m3-btn m3-round-3x m3-skyblue"><i class="fa-solid fa-cloud"></i> Base de Datos</a>
-            <a href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT" class="m3-btn m3-round-3x m3-light-green"> <i class="fa-brands fa-whatsapp" style="font-size: 20px; vertical-align: middle;"></i> Canal informativo </a>
-            <a href="https://www.instagram.com/acila_fefu/" class="m3-btn m3-round-3x m3-pink"> <i class="fa-brands fa-instagram" style="font-size: 20px; vertical-align: middle;"></i> Síguenos </a>
-        </section>
-    </nav>
+<main id="main">
+    <article class="m3-padding-top-3x m3-container-fw" id="LandingBG">
 
-    <article class="m3-row m3-vertical-margin-4x m3-mobile-small">
-        <div class="m3-item m3-text-center m3-hover-light-gray">
-            <figure class="m3-margin"><img src="assets/fa-logo.png" width="170" alt="formacion academica logo"></figure>
-            <h6 style="margin-bottom: 0;" class="m3-bold"> Formación Académica </h6>
-            <p> Академическое Образование </p>
-            <a href="fa/index.html" class="m3-btn m3-transparent m3-text-bronze">Visitar Sitio</a>
-            <a href="#" class="m3-btn m3-gold">Recursos Educativos</a>
+        <button class="m3-display-top-left m3-padding-2x" onclick="OverlayContent('Sidenav');">
+            <i class="fa-solid fa-bars fa-2x m3-bold"></i>
+        </button>
+
+        <div class="m3-w-100">
+            <figure class="m3-text-center">
+                <img src="assets/acila-no-txt.png" width="350">
+                <h1 class="m3-text-center m3-vertical-margin-2x m3-text-shadow">Un pedazo de tierra latina en Vladivostok</h1>
+            </figure>
         </div>
 
-        <div class="m3-item align-bottom m3-text-center m3-hover-light-gray">
-            <figure class="m3-margin"><i class="fa-solid fa-border-none fa-5x"></i></figure>
-            <h6 style="margin-bottom: 0;" class="m3-bold"> Adaptación </h6>
-            <p> Адаптация </p>
-            <p> Estado : en desarrollo </p>
-            <i class="fa-solid fa-circle-notch fa-spin"></i>
-            <i class="fa-solid fa-person-digging fa-bounce"></i>
-            <a href="#" class="m3-btn m3-transparent m3-disabled">Visitar Sitio</a>
-            <a href="#" class="m3-btn m3-grey m3-disabled">Guías</a>
-        </div>
+        <figure class="m3-text-center m3-margin-top-3x">
+            <img src="assets/landing.png">
+        </figure>
 
-        <div class="m3-item align-bottom  m3-text-center m3-hover-light-gray">
-            <figure class="m3-margin"><i class="fa-solid fa-border-none fa-5x"></i></figure>
-            <h6 style="margin-bottom: 0;" class="m3-bold"> Cultura </h6>
-            <p> Культура </p>
-            <p> Estado : en desarrollo </p>
-            <i class="fa-solid fa-circle-notch fa-spin"></i>
-            <i class="fa-solid fa-person-digging fa-bounce"></i>
-            <a href="#" class="m3-btn m3-transparent m3-disabled">Visitar Sitio</a>
-            <a href="#" class="m3-btn m3-grey m3-disabled">Actividades</a>
-        </div>
-
-        <div class="m3-item align-bottom  m3-text-center m3-hover-light-gray ">
-            <figure class="m3-margin"><i class="fa-solid fa-border-none fa-5x"></i></figure>
-            <h6 style="margin-bottom: 0;" class="m3-bold"> Medicina </h6>
-            <p> Медицина </p>
-            <p> Estado : en desarrollo </p>
-            <i class="fa-solid fa-circle-notch fa-spin"></i>
-            <i class="fa-solid fa-person-digging fa-bounce"></i>
-            <a href="#" class="m3-btn m3-transparent m3-disabled">Visitar Sitio</a>
-            <a href="#" class="m3-btn m3-grey m3-disabled">Listado</a>
-        </div>
+        <nav class="m3-nav moda-2">
+            <header class="m3-nav-brand">
+                <div class="m3-row no-gutters">
+                    <div class="m3-item m3-center">
+                        <figure>
+                            <img src="assets/acila-txt.png" width="400" class="">
+                        </figure>
+                    </div>
+                </div>
+            </header>
+        </nav>
     </article>
 
 
+    
 
     <article class="m3-jumbo">
-        <h2 class="m3-margin-bottom-4x">Eventos</h2>
+        
 
-        <article class="m3-media m3-hover-light-gray hover-crystal m3-shadow-2 m3-bar-left m3-border-red m3-accordion">
-            <img src="https://www.mouawad.com/images/mouawad-miss-universe/miss-universe-2021-listpage.jpg" class="m3-media-figure" width="200">
-            <section class="m3-media-content">
-                <h2>Miss Gran Latina <span class="m3-chip m3-bold" style="font-size: 0.8rem;">Prototipo</span></h2>
-                <p><i class="fas fa-calendar m3-text-blue-gray"></i>  Planeación</p>
-                <p><i class="fa-solid fa-location-dot m3-text-red"></i> - - - </p>
-                <p>Falta descripción</p>
-            </section>
-        </article>
+        <article class="m3-row justify-center m3-margin-bottom-4x">
 
-        <div class="m3-panel">
+            <section class="m3-item l3 m4">
+                <h2 class="m3-margin-bottom-4x moda-txt-3">Eventos</h2>
 
-        </div>
+                <div class="timeline">
+                    <div class="events">
+                    <div class="event">
+                        <div class="knob"></div>
+                        
+                        <article class="m3-media m3-round moda-4">
+                            <img src="https://www.mouawad.com/images/mouawad-miss-universe/miss-universe-2021-listpage.jpg" class="m3-media-figure" width="100">
+                            <section class="m3-media-content">
+                                <h4>Miss Gran Latina</h4>
+                                <p><i class="fas fa-calendar"></i>  Planeación</p>
+                            </section>
+                        </article>
 
-        <article class="m3-media m3-hover-blue hover-crystal m3-shadow-2 m3-bar-left m3-border-blue m3-accordion">
-            <img src="assets/eventos/fiesta/fiestalatina.jpg" class="m3-media-figure" width="200">
-            <section class="m3-media-content">
-                <h2>Fiestas Latinas</h2>
-                <p><i class="fas fa-calendar m3-text-blue-gray"></i>  Periódicamente</p>
-                <p><i class="fa-solid fa-location-dot m3-text-red"></i> Г. ВЛАДИВОСТОКА</p>
-                <p>Con frecuencia se organizan fiestas en diversos lugares de la ciudad en las cuales puedes revivir una de las cosas que más disfrutabamos en Latinoamérica.</p>
-                <p>¡No te las pierdas!</p>
-            </section>
-        </article>
-
-            
-        <div class="m3-panel">
-            <div class="m3-margin-bottom-3x m3-black">
-                <article class="m3-row">
-                    <section class="m3-item">
-                        <figure>
-                            <img src="assets/eventos/fiesta/1.jpg">
-                        </figure>
-                    </section>
-    
-                    <section class="m3-item">
-                        <figure>
-                            <img src="assets/eventos/fiesta/2.jpg">
-                        </figure>
-                    </section>
-    
-                    <section class="m3-item">
-                        <figure>
-                            <img src="assets/eventos/fiesta/3.jpg">
-                        </figure>
-                    </section>
-    
-                    <section class="m3-item">
-                        <figure>
-                            <img src="assets/eventos/fiesta/4.jpg">
-                        </figure>
-                    </section>
-                </article>
-    
-                <article class="m3-row">
-                    <section class="m3-item">
-                        <figure>
-                            <img src="https://www.itl.cat/pngfile/big/212-2127686_disco-wallpapers-30-pc-disco-images-in-popular.jpg">
-                        </figure>
-                    </section>
+                    </div>
                     
-                    <section class="m3-item">
-                        <figure>
-                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
-                        </figure>
-                    </section>
-                </article>
-            </div>
-        </div>
+                    <div class="event">
+                        <div class="knob"></div>
+                        
+                        <article class="m3-media m3-round moda-4">
+                            <img src="assets/eventos/fiesta/fiestalatina.jpg" class="m3-media-figure" width="100">
+                            <section class="m3-media-content">
+                                <h4>Fiestas Latinas</h4>
+                                <p class="date"><i class="fas fa-calendar"></i>  Periódicamente</p>
+                            </section>
+                        </article>
 
-        <article class="m3-media m3-hover-light-green hover-crystal m3-shadow-2 m3-bar-left m3-border-light-green m3-accordion">
-            <img src="assets/eventos/ecomoda/1.jpg" class="m3-media-figure" width="200">
-            <section class="m3-media-content">
-                <h2>Ecomoda</h2>
-                <p><i class="fas fa-calendar m3-text-blue-gray"></i> Junio del 2021</p>
-                <p><i class="fa-solid fa-location-dot m3-text-red"></i> КАМПУС ДВФУ, ВЛАДИВОСТОК</p>
-                <p>Nuestros participantes tuvieron la oportunidad de diseñar sus propios atuendos hechos a base de materiales reutilizados.</p>
+                    </div>
+
+                    <div class="event">
+                        <div class="knob"></div>
+                        
+                        <article class="m3-media m3-round moda-4">
+                            <img src="assets/eventos/ecomoda/1.jpg" class="m3-media-figure" width="100">
+                            <section class="m3-media-content">
+                                <h4>Ecomoda</h4>
+                                <p><i class="fas fa-calendar"></i>  Junio del 2021</p>
+                            </section>
+                        </article>
+
+                    </div>
+
+                    <div class="line"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="m3-item l7 m7">
+                <article class="m3-margin-bottom">
+                    <h3 class="moda-txt-3">Elecciones 2022</h3>
+                    <p>
+                        El viernes 29 de abril tuvimos la oportunidad de escoger a nuestros nuevos representantes, quienes continuarán moldeando esta organización
+                        a fin de ser más eficientes al momento de apoyar a los estudiantes latinos de la
+                        <a class="m3-text-skyblue" href="https://dvfu.ru">Universidad Federal del Lejano Oriente</a>.
+                    </p>
+            
+                    <div class="m3-photofilm m3-text-center m3-text-white">
+                        <a href="#Lideres">
+                            <figure class="m3-figure">
+                                <img src="assets/elecciones/lideres.JPG" />
+                                <figcaption class="m3-caption">Nuevos Líderes</figcaption>
+                            </figure>
+                        </a>
+                        
+                        <a href="#Participantes">
+                            <figure class="m3-figure">
+                                <img src="assets/elecciones/latinos.JPG" />
+                                <figcaption class="m3-caption">Participantes</figcaption>
+                            </figure>
+                        </a>
+                        
+                        <a href="#Votaciones">
+                            <figure class="m3-figure">
+                                <img src="assets/elecciones/votaciones.jpg" />
+                                <figcaption class="m3-caption">Votaciones en curso</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </article>
+
+                <article>
+                    <h3 class="moda-txt-3">¡Nuestra gran inauguración oficial!</h3>
+                    <p>
+                    La inauguración de nuestra asociación tuvo lugar en el Edificio A de la FEFU el 26 de octubre del 2019. Los invitados pudieron disfrutar de un grandioso evento, 
+                    que estuvo lleno de actividades, premios y bailes hechos con mucha dedicación y cariño.
+                    </p>
+                    <p>
+                        <a href="https://vk.com/album-90273867_266822283" class="m3-text-skyblue">Ver más fotos</a>
+                    </p>
+                    <figure>
+                        <img src="assets/inauguracion/liston.jpg" width="400">
+                    </figure>
+                </article>
+            </section>
+
+            <section class="m3-item l10 s12 m10">
+                <article class=" m3-vertical-margin-2x">
+                    <h3 class="moda-txt-3">Anuncios</h3>
+                    
+                    <figure class="m3-container-fw m3-margin-top-4x" style="max-width: 900px;">
+                        <div class="m3-display-middle m3-padding m3-w-100-mobile m3-mobile-tiny">
+                            <h3>Participa como voluntario de ACILA</h3>
+                            <p>Forma parte de la asociación encargada de velar por los latinos que estudian en FEFU</p>
+                            <a class="m3-btn m3-emerald" href="#">Solicitar Unirme</a>
+                        </div>
+                        <img src="assets/collage/8.jpg" class="m3-w-100 m3-h-100">
+                    </figure>
+                </article>
             </section>
         </article>
 
+    </article>
+    
+
+    <article class="m3-jumbo" style="background-color: #171717;">
+        <h2 class="m3-text-center moda-txt-3">Departamentos</h2>
+        <article class="m3-row m3-vertical-margin-4x m3-mobile-small">
+            <div class="m3-item m3-text-center ">
+                <figure class="m3-margin"><i class="fa-solid fa-book-atlas fa-5x m3-text-gradient-vintage"></i></figure>
+                <h6 style="margin-bottom: 0;" class="m3-bold"> Formación Académica </h6>
+                <p> Академическое Образование </p>
+                <a href="fa/index.html" class="m3-btn m3-text-white m3-transparent m3-vertical-borders m3-border-orange">Ir al sitio</a>
+            </div>
+    
+            <div class="m3-item align-bottom m3-text-center ">
+                <figure class="m3-margin"><i class="fa-solid fa-street-view fa-5x m3-text-gradient-vintage"></i></figure>
+                <h6 style="margin-bottom: 0;" class="m3-bold"> Adaptación </h6>
+                <p> Адаптация </p>
+                <p> Estado : en desarrollo </p>
+                <i class="fa-solid fa-circle-notch fa-spin"></i>
+                <i class="fa-solid fa-person-digging fa-bounce"></i>
+                <a href="#" class="m3-btn m3-grey m3-disabled">Guías</a>
+            </div>
+    
+            <div class="m3-item align-bottom  m3-text-center ">
+                <figure class="m3-margin"><i class="fa-solid fa-earth-americas fa-5x m3-text-gradient-vintage"></i></figure>
+                <h6 style="margin-bottom: 0;" class="m3-bold"> Cultura </h6>
+                <p> Культура </p>
+                <p> Estado : en desarrollo </p>
+                <i class="fa-solid fa-circle-notch fa-spin"></i>
+                <i class="fa-solid fa-person-digging fa-bounce"></i>
+                <a href="#" class="m3-btn m3-grey m3-disabled">Actividades</a>
+            </div>
+        </article>
+
+        <article class="m3-row m3-vertical-margin-4x m3-mobile-small">
+            <div class="m3-item m3-text-center ">
+                <figure class="m3-margin"><i class="fa-solid fa-medal fa-5x m3-text-gradient-vintage"></i></figure>
+                <h6 style="margin-bottom: 0;" class="m3-bold"> Deportes </h6>
+                <p> Виды спорта </p>
+                <p> Estado : en desarrollo </p>
+                <i class="fa-solid fa-circle-notch fa-spin"></i>
+                <i class="fa-solid fa-person-digging fa-bounce"></i>
+                <a href="#" class="m3-btn m3-grey m3-disabled">Actividades Próximas</a>
+            </div>
+    
+            <div class="m3-item m3-text-center ">
+                <figure class="m3-margin"><i class="fa-solid fa-shapes fa-5x m3-text-gradient-vintage"></i></figure>
+                <h6 style="margin-bottom: 0;" class="m3-bold"> Oportunidad Laboral </h6>
+                <p> Возможность трудоустройства </p>
+                <p> Estado : en desarrollo </p>
+                <i class="fa-solid fa-circle-notch fa-spin"></i>
+                <i class="fa-solid fa-person-digging fa-bounce"></i>
+                <a href="#" class="m3-btn m3-grey m3-disabled">Buscar</a>
+            </div>
+
+            <div class="m3-item align-bottom  m3-text-center  ">
+                <figure class="m3-margin "><i class="fa-solid fa-prescription-bottle-medical fa-5x m3-text-gradient-vintage"></i></figure>
+                <h6 style="margin-bottom: 0;" class="m3-bold"> Medicina </h6>
+                <p> Медицина </p>
+                <p> Estado : en desarrollo </p>
+                <i class="fa-solid fa-circle-notch fa-spin"></i>
+                <i class="fa-solid fa-person-digging fa-bounce"></i>
+                <a href="#" class="m3-btn m3-grey m3-disabled">Listado</a>
+            </div>
+        </article>
+    </article>
+
+    <header class="m3-container-fw m3-parallax m3-text-white">
+        <div class="m3-padding-2x">
+            <section class="">
             
-        <div class="m3-panel">
-            <article class="m3-row">
-
-                <section class="m3-item s4">
-                    <figure>
-                        <img src="assets/eventos/ecomoda/6.jpg">
-                    </figure>
-                </section>
-                <section class="m3-item s4">
-                    <figure>
-                        <img src="assets/eventos/ecomoda/2.jpg">
-                    </figure>
-                </section>
-                <section class="m3-item s4">
-                    <figure>
-                        <img src="assets/eventos/ecomoda/3.jpg">
-                    </figure>
-                </section>
-                <section class="m3-item s6">
-                    <figure>
-                        <img src="assets/eventos/ecomoda/4.jpg">
-                    </figure>
-                </section>
-                <section class="m3-item s6">
-                    <figure>
-                        <img src="assets/eventos/ecomoda/5.jpg">
-                    </figure>
-                </section>
-                
-            </article>
-
-            <article class="m3-row">
-                <section class="m3-item">
-                    <h2 class="m3-margin-bottom-2x">Backstage</h2>
-                    <div class="m3-responsive-vido" style="max-width: 600px;">
-                        <video muted autoplay controls>
-                            <source src="assets/eventos/ecomoda/backstage.mp4">
-                        </video>
+                <section class="m3-row m3-text-white" id="Nosotros">
+                    <div class="m3-item m3-border-bottom">
+                        <h1 class="m3-margin-bottom-2x moda-txt-3">Un poco más acerca de nosotros </h1>
                     </div>
                 </section>
-            </article>
+                <section class="m3-row m3-text-white">
+        
+                    <div class="m3-item">
+                        <h2 class="m3-margin-bottom-4x"><i class="fa-solid fa-code-fork m3-text-gradient-vintage"></i> Misión </h2>
+                        <p>
+                            Aprovechar nuestra capacidad creativa y organizativa para servir a las distintas asociaciones. Promoviendo el esparcimiento
+                            intelectual, cultural y de entretenimiento para dar así lugar a la unión y respeto de estas entre las distintas naciones, de tal
+                            manera que se logre satisfacer las necesidades intelectuales y se eleve y gratifique al ser humano.
+                        </p>
+                    </div>
+        
+                    <div class="m3-item">
+                        <h2 class="m3-margin-bottom-4x"><i class="fa-solid fa-earth-asia m3-text-gradient-vintage"></i> Visión </h2>
+                        <p>
+                            Ser la asociación más destacada en la Universidad Federal del Lejano Oriente, gracias a nuestra innovación, organización, y a la unión
+                            de las diversas culturas, sin presencia alguna de la discriminación. Ser reconocidos por la calidad, respeto y altruismo de nuestros miembros.
+                        </p>
+                    </div>
+        
+                    <div class="m3-item">
+                        <h2 class="m3-margin-bottom-4x"><i class="fa-solid fa-list-check m3-text-gradient-vintage"></i> Objetivos </h2>
+                        <p>
+                            <ul class="m3-list striped">
+                                <li>Proteger y representar los derechos y deberes de los estudiantes a fin de seguir los lineamientos de la universidad.</li>
+                                <li>Acompañar a los estudiantes hispanohablantes de manera adecuada y oportuna en su proceso de adaptación en la universidad.</li>
+                                <li>Apoyar y promover las iniciativas de desarrollo de los estudiantes de la FEFU.</li>
+                                <li>Incentivar el idioma y la cultura Rusa entre los estudiantes hispanohablantes de la FEFU</li>
+                                <li>Plantear el esparcimiento de culturas, dando así lugar a la integración y respeto entre distintas naciones</li>
+                            </ul>
+                        </p>
+                    </div>
+                </section>
+                
+            </section>
+
         </div>
+    </header>
 
-    </article>
+    <header class="m3-container-fw m3-parallax m3-text-white"
+    style="background-image: url('assets/obzh.jpg'); background-size: cover; background-position: top;">
+        <div class="m3-padding-2x">
+           
 
 
+            <article class="m3-black m3-jumbo m3-round-2x crystal-3">
+                <h2 class="m3-margin-bottom-4x m3-text-white m3-center">Nuestros Líderes</h2>
+        
+                <section class="m3-card-deck margins m3-center">
+        
+                    <section class="m3-card m3-white round" style="max-width: 400px;">
+                        <header class="m3-container-fw m3-h-100">
+                            <img src="assets/lideres/presidenta.jpg" class="m3-card-media">
+                            <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
+                            style=" background: linear-gradient(transparent, #000);">
+                                <b>Janely Paredes</b> <br>
+                                <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Presidenta</span>
+                            </div>
+                        </header>
+                    
+                        <article class="m3-card-content m3-padding-4x m3-text-center">
+                            <button class="m3-large m3-border m3-padding m3-circle m3-shadow"
+                            style="width: 55px; height: 55px;"><a href="https://www.instagram.com/janeizperu/"><i class="fa-brands fa-instagram m3-large"></i></a></button>
+                        </article>
+                    </section>
+        
+                    <section class="m3-card m3-white round" style="max-width: 400px;">
+                        <header class="m3-container-fw m3-h-100">
+                            <img src="assets/lideres/vicepresidenta.webp" class="m3-card-media">
+                            <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
+                            style=" background: linear-gradient(transparent, #000);">
+                                <b>Jocelyn Escalier</b> <br>
+                                <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Vicepresidenta</span>
+                            </div>
+                        </header>
+                    
+                        <article class="m3-card-content m3-padding-4x m3-text-center">
+                            <button class="m3-large m3-border m3-padding m3-circle m3-shadow"
+                            style="width: 55px; height: 55px;"><a href="https://www.instagram.com/jocelyn.e08/"><i class="fa-brands fa-instagram m3-large"></i></a></button>
+                        </article>
+                    </section>
+        
+                    <section class="m3-card m3-white round" style="max-width: 400px;">
+                        <header class="m3-container-fw m3-h-100">
+                            <img src="assets/lideres/lider-fa.jpg" class="m3-card-media">
+                            <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
+                            style=" background: linear-gradient(transparent, #000);">
+                                <b>Daniel Castillo</b> <br>
+                                <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Formación Académica</span>
+                            </div>
+                        </header>
+                    
+                        <article class="m3-card-content m3-padding-4x m3-text-center">
+                            <button class="m3-large m3-border m3-padding m3-circle m3-shadow"
+                            style="width: 55px; height: 55px;"><a href="https://instagram.com/daniel_castillo.7"><i class="fa-brands fa-instagram m3-large"></i></a></button>
+        
+                            <button class="m3-large m3-border  m3-padding m3-circle m3-shadow"
+                            style="width: 55px; height: 55px;"><a href="https://wa.me/79244266422"><i class="fa-brands fa-whatsapp m3-large"></i></a></button>
+                        </article>
+                    </section>
+        
+                    <section class="m3-card m3-white round" style="max-width: 400px;">
+                        <header class="m3-container-fw m3-h-100">
+                            <img src="assets/lideres/lider-adapt.jpg" class="m3-card-media">
+                            <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
+                            style=" background: linear-gradient(transparent, #000);">
+                                <b>Edgar Gomez</b> <br>
+                                <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Adaptación</span>
+                            </div>
+                        </header>
+                    
+                        <article class="m3-card-content m3-padding-4x m3-text-center">
+                            <button class="m3-large m3-border m3-padding m3-circle m3-shadow"
+                            style="width: 55px; height: 55px;"><a href="https://www.instagram.com/edgardgomezr87/"><i class="fa-brands fa-instagram m3-large"></i></a></button>
+                        </article>
+                    </section>
+        
+                </section>
 
+                <section class="m3-card-deck margins m3-center m3-margin-top-3x">
 
-    <article class="m3-jumbo" 
-    style="background: rgb(82, 116, 133);">
+                    <section class="m3-card m3-white round" style="max-width: 400px;">
+                        <header class="m3-container-fw m3-h-100">
+                            <img src="assets/lideres/lider-cult.jpg" class="m3-card-media">
+                            <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
+                            style=" background: linear-gradient(transparent, #000);">
+                                <b>Jose Jerez</b> <br>
+                                <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Cultura</span>
+                            </div>
+                        </header>
+                    
+                        <article class="m3-card-content m3-padding-4x m3-text-center">
+                            <button class="m3-large m3-border m3-padding m3-circle m3-shadow"
+                            style="width: 55px; height: 55px;"><a href="https://www.instagram.com/edgardgomezr87/"><i class="fa-brands fa-instagram m3-large"></i></a></button>
+                        </article>
+                    </section>
 
-        <section class="m3-row m3-text-white" id="Nosotros">
-            <div class="m3-item m3-text-center m3-adaptive-text m3-border-bottom">
-                <h2 class="m3-margin-bottom-2x"><i class="fa-solid fa-people-roof"></i> Nosotros </h2>
-                <p class="m3-small"><i class="fa-solid fa-location-dot m3-text-yellow"></i> КАМПУС ДВФУ, ВЛАДИВОСТОК</p>
-                <p>
-                    Nuestro propósito principal es fomentar la diversidad y riqueza cultural de Latinoamérica. Teniendo siempre en cuenta la unión 
-                    y participación de los demás paises, trabajando así en conjunto con el resto de organizaciones y respetando las normas de la
-                    Universidad de Lejano Oriente.
-                </p>
-            </div>
-
-        </section>
-        <section class="m3-row">
-
-            <div class="m3-item m3-white">
-                <h2 class="m3-margin-bottom-4x"><i class="fa-solid fa-code-fork"></i> Misión </h2>
-                <p>
-                    Aprovechar nuestra capacidad creativa y organizativa para servir a las distintas asociaciones. Promoviendo el esparcimiento
-                    intelectual, cultural y de entretenimiento para dar así lugar a la unión y respeto de estas entre las distintas naciones, de tal
-                    manera que se logre satisfacer las necesidades intelectuales y se eleve y gratifique al ser humano.
-                </p>
-            </div>
-
-            <div class="m3-item m3-white">
-                <h2 class="m3-margin-bottom-4x"><i class="fa-solid fa-earth-asia"></i> Visión </h2>
-                <p>
-                    Ser la asociación más destacada en la Universidad Federal del Lejano Oriente, gracias a nuestra innovación, organización, y a la unión
-                    de las diversas culturas, sin presencia alguna de la discriminación. Ser reconocidos por la calidad, respeto y altruismo de nuestros miembros.
-                </p>
-            </div>
-
-            <div class="m3-item m3-white">
-                <h2 class="m3-margin-bottom-4x"><i class="fa-solid fa-list-check"></i> Objetivos </h2>
-                <p>
-                    <ul class="m3-list striped m3-border ">
-                        <li>Proteger y representar los derechos y deberes de los estudiantes a fin de seguir los lineamientos de la universidad.</li>
-                        <li>Acompañar a los estudiantes hispanohablantes de manera adecuada y oportuna en su proceso de adaptación en la universidad.</li>
-                        <li>Apoyar y promover las iniciativas de desarrollo de los estudiantes de la FEFU.</li>
-                        <li>Incentivar el idioma y la cultura Rusa entre los estudiantes hispanohablantes de la FEFU</li>
-                        <li>Plantear el esparcimiento de culturas, dando así lugar a la integración y respeto entre distintas naciones</li>
-                    </ul>
-                </p>
-            </div>
-        </section>
-
-    </article>
-
-    <article class="m3-row m3-large m3-margin-bottom-4x">
-        <section class="m3-item m3-bar-bottom m3-border-red m3-text-center" style="background-color: rgb(255, 241, 241);">
-            <h2 class="m3-text-wine">Elecciones 2022</h2>
-            <p>
-                El viernes 29 de abril tuvimos la oportunidad de escoger a nuestros nuevos representantes, quienes continuaran moldeando esta organizacion
-                a fin de ser mas eficientes al momento de apoyar a los estudiantes latinos de la
-                <b class="m3-text-blue">Universidad Federal del Lejano Oriente (FEFU)</b>.
-            </p>
-    
-            <div class="m3-photofilm m3-center m3-text-white">
-                <a href="#Lideres">
-                    <figure class="m3-figure">
-                        <img src="assets/elecciones/lideres.JPG" />
-                        <figcaption class="m3-caption">Nuevos Líderes</figcaption>
-                    </figure>
-                </a>
+                    <section class="m3-card m3-white round" style="max-width: 400px;">
+                        <header class="m3-container-fw m3-h-100">
+                            <img src="assets/lideres/contabilidad.jpg" class="m3-card-media">
+                            <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
+                            style=" background: linear-gradient(transparent, #000);">
+                                <b>Laura Calderon</b> <br>
+                                <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Contabilidad</span>
+                            </div>
+                        </header>
+                    
+                        <article class="m3-card-content m3-padding-4x m3-text-center">
+                            <button class="m3-large m3-border m3-padding m3-circle m3-shadow"
+                            style="width: 55px; height: 55px;"><a href="https://www.instagram.com/Nosiatlala/"><i class="fa-brands fa-instagram m3-large"></i></a></button>
+                        </article>
+                    </section>
+        
+                </section>
                 
-                <a href="#Participantes">
-                    <figure class="m3-figure">
-                        <img src="assets/elecciones/latinos.JPG" />
-                        <figcaption class="m3-caption">Nuestros Votantes Latinos</figcaption>
-                    </figure>
-                </a>
-                
-                <a href="#Votaciones">
-                    <figure class="m3-figure">
-                        <img src="assets/elecciones/votaciones.jpg" />
-                        <figcaption class="m3-caption">Votaciones en curso</figcaption>
-                    </figure>
-                </a>
-            </div>
-        </section>
+            </article>
 
-        <section class="m3-item m3-bar-bottom m3-border-emerald" style="background-color: rgb(241, 255, 252);">
-            <h2 class="m3-text-teal">¡Nuestra gran inauguración oficial!</h2>
-            <p>
-            La inauguración de nuestra asociación tuvo lugar en el Edificio A de la FEFU el 26 de octubre del 2019. Los invitados pudieron disfrutar de un grandioso evento, 
-            que estuvo lleno de actividades, premios y bailes hechos con mucha dedicación y cariño.
-            </p>
-            <p>
-                <a href="https://vk.com/album-90273867_266822283" class="m3-text-skyblue">Ver más fotos</a>
-            </p>
-            <figure>
-                <img src="assets/inauguracion/liston.jpg" width="400">
-            </figure>
-        </section>
-    </article>
+        </div>
+    </header>
+
 
     <article class="m3-modal" id="Lideres">
         <div class="m3-modal-content">
@@ -355,252 +624,91 @@
     </article>
 
 
-        
-    <article class="m3-jumbo">
-        <h2 class="m3-margin-bottom-4x">Líderes</h2>
-
-        <section class="m3-card-deck margins">
-
-            <section class="m3-card round m3-shadow-2" style="max-width: 400px;">
-                <header class="m3-container-fw m3-h-100">
-                    <img src="assets/lideres/presidenta.jpg" class="m3-card-media">
-                    <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
-                    style=" background: linear-gradient(transparent, #000);">
-                        <b>Janely Paredes</b> <br>
-                        <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Presidenta</span>
-                    </div>
-                </header>
-            
-                <article class="m3-card-content m3-padding-4x m3-text-center">
-                    <button class="m3-large m3-border m3-border-pink m3-padding m3-text-fuchsia m3-circle m3-shadow"
-                    style="width: 55px; height: 55px;"><a href="https://www.instagram.com/janeizperu/"><i class="fa-brands fa-instagram m3-large"></i></a></button>
-                </article>
-            </section>
-
-            <section class="m3-card round m3-shadow-2" style="max-width: 400px;">
-                <header class="m3-container-fw m3-h-100">
-                    <img src="assets/lideres/vicepresidenta.webp" class="m3-card-media">
-                    <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
-                    style=" background: linear-gradient(transparent, #000);">
-                        <b>Jocelyn Escalier</b> <br>
-                        <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Vicepresidenta</span>
-                    </div>
-                </header>
-            
-                <article class="m3-card-content m3-padding-4x m3-text-center">
-                    <button class="m3-large m3-border m3-border-pink m3-padding m3-text-fuchsia m3-circle m3-shadow"
-                    style="width: 55px; height: 55px;"><a href="https://www.instagram.com/jocelyn.e08/"><i class="fa-brands fa-instagram m3-large"></i></a></button>
-                </article>
-            </section>
-
-            <section class="m3-card round m3-shadow-2" style="max-width: 400px;">
-                <header class="m3-container-fw m3-h-100">
-                    <img src="assets/lideres/lider-fa.jpg" class="m3-card-media">
-                    <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
-                    style=" background: linear-gradient(transparent, #000);">
-                        <b>Daniel Castillo</b> <br>
-                        <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Departamento Formación Académica</span>
-                    </div>
-                </header>
-            
-                <article class="m3-card-content m3-padding-4x m3-text-center">
-                    <button class="m3-large m3-border m3-border-pink m3-padding m3-text-fuchsia m3-circle m3-shadow"
-                    style="width: 55px; height: 55px;"><a href="https://instagram.com/daniel_castillo.7"><i class="fa-brands fa-instagram m3-large"></i></a></button>
-
-                    <button class="m3-large m3-border m3-border-emerald m3-padding m3-text-emerald m3-circle m3-shadow"
-                    style="width: 55px; height: 55px;"><a href="https://wa.me/79244266422"><i class="fa-brands fa-whatsapp m3-large"></i></a></button>
-                </article>
-            </section>
-
-            <section class="m3-card round m3-shadow-2" style="max-width: 400px;">
-                <header class="m3-container-fw m3-h-100">
-                    <img src="assets/lideres/lider-adapt.jpg" class="m3-card-media">
-                    <div class="m3-display-bottom-left m3-text-white m3-large m3-w-100 m3-padding-2x"
-                    style=" background: linear-gradient(transparent, #000);">
-                        <b>Edgar Gomez</b> <br>
-                        <span class="m3-small"><i class="fa-solid fa-briefcase"></i> Departamento Adaptación</span>
-                    </div>
-                </header>
-            
-                <article class="m3-card-content m3-padding-4x m3-text-center">
-                    <button class="m3-large m3-border m3-border-pink m3-padding m3-text-fuchsia m3-circle m3-shadow"
-                    style="width: 55px; height: 55px;"><a href="https://www.instagram.com/edgardgomezr87/"><i class="fa-brands fa-instagram m3-large"></i></a></button>
-                </article>
-            </section>
-
-        </section>
-        
-    </article>
-
-    <h1 class="m3-margin-bottom-4x m3-center m3-text-gradient-vintage">Todos somos uno</h1>
-
-
-    <article class="m3-row m3-mobile-hide m3-shadow-2 m3-gradient-dream">
-        <section class="m3-item" style="padding: 0.3rem;">
-            <figure class="m3-container-fw">
-                <img src="assets/collage/triple/izq.jpg" class="m3-w-100 m3-h-100">
-            </figure>
-        </section>
-
-        <section class="m3-item" style="padding: 0.3rem;">
-            <figure class="m3-container-fw">
-                <img src="assets/collage/triple/cen.jpg" class="m3-w-100 m3-h-100">
-            </figure>
-        </section>
-
-        <section class="m3-item" style="padding: 0.3rem;">
-            <figure class="m3-container-fw">
-                <img src="assets/collage/triple/der.jpg" class="m3-w-100 m3-h-100">
-            </figure>
-        </section>
-    </article>
-
-    
-
-    
 
     <article class="m3-jumbo">
-        <figure class="m3-vertical-margin-3x">
-            <img src="https://www.dvfu.ru/html/svg/logos/logo_base_ru.svg" >
-        </figure>
-        <h2 class="m3-margin-bottom-4x">Acerca de la Universidad Federal del Lejano Oriente (FEFU)</h2>
-
-        <article class="m3-row space-around">
-            <section class="m3-item">
-                <p>
-                    La FEFU es portadora de las tradiciones de la cultura clásica, la ciencia y la educación rusas. La Universidad Federal del Lejano Oriente tiene sus orígenes en 1899, cuando se fundó el Instituto Oriental en Vladivostok.
-                </p> 
-                <p>
-                    Hoy en día, la FEFU es la única universidad clásica del este de Rusia. Incorpora escuelas con tradiciones de varias generaciones y áreas de investigación que forman el núcleo de nuestra base intelectual.
-                </p>
-                <p>
-                    Una de las ventajas de la FEFU es su ubicación geográfica en el centro de la región de Asia-Pacífico, que es ahora una de las partes del mundo con mayor desarrollo dinámico. Este lugar es el segundo polo de la civilización mundial, que incluye los países líderes del globo, como China, Estados Unidos, Japón, India y muchas ciudades metropolitanas de fama mundial, como Singapur, Hong Kong, Sydney y Seúl. 
-                </p>
-                <p>
-                    Ser un vínculo o un puente cultural entre Rusia y esta parte del mundo sigue siendo uno de los principales objetivos de la FEFU. Por ello, nuestra Universidad no es sólo un camino hacia tu futuro profesional, sino también un camino hacia el futuro de todo el país, donde todos los jóvenes motivados, trabajadores y con talento encontrarán el lugar que les corresponde.
-                </p>
-            </section>
-
-            <figure class="m3-item size-4">
-                <img src="assets/fefu.jpg" class="" style="max-width: 400px;">
-            </figure>
-        </article>
-
-
-        <article class="m3-row space-around">
-
-            <figure class="m3-item size-4">
-                <img src="assets/estudiantes-ext.jpg" class="" style="max-width: 500px;">
-            </figure>
-
-            <section class="m3-item">
-                <p>
-                    Ser un estudiante de FEFU significa que tienes una oportunidad de por vida para superar tus ambiciones. Por esta razón, más de 3500 estudiantes internacionales han elegido FEFU como destino para su educación superior.
-                </p>
-                <p>
-                    La universidad está diseñada sobre la base de los más altos estándares internacionales y ha estado desarrollando activamente las relaciones con las principales universidades; centros de investigación y empresas de negocios de todo el mundo que apoyan las cooperaciones internacionales para crear muchas oportunidades para los estudiantes, incluyendo proyectos de investigación conjunta, becas, subvenciones y programas de intercambio.
-                </p>
-                <p>
-                    Los estudiantes viven en el campus de la FEFU que se encuentra en una encantadora isla rodeada de un impresionante paisaje verde, lago, mar, flujo de agua, fuente y pequeñas colinas.ExploreLa extraordinaria ubicación y la modernidad de la FEFU la han convertido en un destino para los principales eventos internacionales y políticos, como el Foro Económico Oriental, donde los líderes de la región de Asia y el Pacífico se reúnen anualmente en la Universidad Federal del Lejano Oriente.
-                </p>
-            </section>
-
-        </article>
-
-        <article class="m3-row">
-            <div class="m3-item m3-border-bottom">
-                <h2 class="m3-margin-bottom-4x">Ubicación</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23333.23528601915!2d131.8818713!3d43.0276608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb3f542efc5c721%3A0x7c3e6d492c991315!2z0JTQktCk0KM!5e0!3m2!1sru!2sru!4v1651647774757!5m2!1sru!2sru" height="300" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </article>
-        
-    </article>
-
-
-    <article class="m3-jumbo">
-        <h2 class="m3-text-emerald m3-margin-bottom-4x">Agradecimientos especiales <i class="fa-solid fa-hand-peace fa-bounce m3-text-blue-gray"></i></h2>
+        <h2 class="m3-margin-bottom-4x m3-text-center">Agradecimientos especiales <i class="fa-solid fa-hand-peace fa-bounce m3-text-gradient-vintage"></i></h2>
         
 
-        <article class="m3-media items-center">
-            <img src="assets/fundadora/circle.jpg" class="m3-media-figure m3-circle" width="250">
-            <section class="m3-media-content m3-padding-left-3x">
-                <h2>Geraldine Osorio</h2>
+        <article class="m3-text-center">
+            <h2>Geraldine Osorio</h2>
                 <div class="m3-large">
                     <p>
                         <i class="fa-brands fa-font-awesome m3-text-gold"></i> 
-                        <span class="m3-text-gold">Col</span><span class="m3-text-blue">om</span><span class="m3-text-red">bia</span>
+                        <span class="m3-text-gold">Col</span><span class="m3-text-skyblue">om</span><span class="m3-text-red">bia</span>
                     </p>
                     <p><i class="fa-solid fa-hands-holding-circle"></i> FUNDADORA</p>
                 </div>
-            </section>
         </article>
 
-        <p class="m3-adaptive-text">
-            Gracias a tus esfuerzos podremos brindar una mejor experiencia a 
-            todos los estudiantes latinos que se encuentren llevando sus estudios en FEFU.
-        </p>
 
-        <p class="m3-adaptive-text">
-            Reconocemos tu arduo trabajo y valoramos tu perseverancia ante todo lo que tuviste que enfrentar para conseguir fundar esta asociación.
-        </p>
 
 
         <section class="m3-row justify-center">
-            <div class="m3-item size-4">
+            <div class="m3-item l2 m3 s6">
                 <figure class="m3-container-fw">
-                    <img src="assets/fundadora/1.jpg" class="m3-round-2x m3-shadow-4 m3-bar m3-border-gold">
+                    <img src="assets/fundadora/1.jpg" class="m3-round-2x m3-shadow-4 m3-bar m3-border-orange">
                 </figure>
             </div>
         </section>
         
         <section class="m3-row justify-center">
-            <div class="m3-item size-4">
+            <div class="m3-item l2 m3 s6">
                 <figure class="m3-container-fw">
-                    <img src="assets/fundadora/2.jpg" class="m3-round-2x m3-shadow-4 m3-bar m3-border-light-green">
+                    <img src="assets/fundadora/2.jpg" class="m3-round-2x m3-shadow-4 m3-bar m3-border-yellow">
                 </figure>
             </div>
 
-            <div class="m3-item size-4">
+            <div class="m3-item l2 m3 s6">
                 <figure class="m3-container-fw">
-                    <img src="assets/fundadora/4.jpg" class="m3-round-2x m3-shadow-4 m3-bar m3-border-red">
+                    <img src="assets/fundadora/4.jpg" class="m3-round-2x m3-shadow-4 m3-bar m3-border-emerald">
                 </figure>
             </div>
+        </section>
+
+        <section class="m3-margin-top-3x m3-text-center">
+            <p class="m3-adaptive-text">
+                Gracias a tus esfuerzos podremos brindar una mejor experiencia a 
+                todos los estudiantes latinos que se encuentren llevando sus estudios en FEFU.
+            </p>
+    
+            <p class="m3-adaptive-text">
+                Reconocemos tu arduo trabajo y valoramos tu perseverancia ante todo lo que tuviste que enfrentar para conseguir fundar esta asociación.
+            </p>
         </section>
     </article>
 
 
-
+    <article class="m3-row no-gutters">
+        <section class="m3-item">
+            <figure>
+                <img src="assets/latam/collage.png">
+            </figure>
+        </section>
+    </article>
 
     <footer class="m3-padding-2x m3-black">
-        <div class="m3-center m3-text-grey">
-            <a href="#Nosotros" class="m3-horizontal-padding m3-hover-text-white"><i class="fa-solid fa-user-group"></i> Nosotros</a>
-            <a href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ" class="m3-horizontal-padding m3-hover-text-white"><i class="fa-solid fa-cloud"></i> Base de Datos</a>
-            <a href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT" class="m3-horizontal-padding m3-hover-text-white"> <i class="fa-brands fa-whatsapp" style="font-size: 20px; vertical-align: middle;"></i> Canal informativo </a>
-            <a href="https://www.instagram.com/acila_fefu/" class="m3-horizontal-padding m3-hover-text-white"> <i class="fa-brands fa-instagram" style="font-size: 20px; vertical-align: middle;"></i> Síguenos </a>
-        </div>
 
         <article class="h3 m3-text-center m3-margin-top-3x">
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_Vladivostok%2C_Russia.png" width="175" class="m3-margin-bottom-2x m3-round-3x"><br>
-            <span class="m3-text-emerald">Hecho en </span><span class="m3-text-white">Vladivostok</span>
+            <span class="lt-txt-skyblue">Hecho en </span><span class="m3-text-white">Vladivostok</span>
         </article>
         <section class="m3-center m3-text-center m3-padding-2x m3-text-gray">
-            <p class="m3-padding">
+            <p class="m3-padding m3-mobile-small">
                 ACILA © 2022 <br>
-                Este sitio es hospedado por <a href="https://pages.github.com/" class="m3-text-white">Github Pages</a><br>
-                Diseñado y desarrollado por <a href="https://instagram.com/daniel_castillo.7" class="m3-text-light-green">Daniel Castillo</a>
+                Este sitio es hospedado por <a href="https://pages.github.com/" class="m3-text-light-gray">Github Pages</a><br>
+                Diseñado y desarrollado por <a href="https://instagram.com/daniel_castillo.7" class="lt-txt-orange-1">Daniel Castillo</a>
             </p>
         </section>
         <section class="m3-center m3-mobile-small">
-            <a href="#" class="m3-btn">Utilidades</a>
             <a href="https://2gis.ru/vladivostok" class="m3-btn">Mapa de la ciudad</a>
-            <a href="https://www.dvfu.ru/" class="m3-btn">DVFU</a>
+            <a href="https://www.dvfu.ru/" class="m3-btn">Sitio DVFU</a>
         </section>
     </footer>
-
+</main>
 
     <script src="https://kit.fontawesome.com/fee6a207c2.js" crossorigin="anonymous"></script>
 
-    <script src="assets/loader/loader.js"></script>
+    <!--<script src="assets/loader/loader.js"></script>-->
 
     <script>
         let acc = document.getElementsByClassName("m3-accordion"); let i;
@@ -615,6 +723,13 @@
                 } 
             });
         }
+
+
+        function OverlayContent(id) {
+            let sidenav_id = document.getElementById(id);
+            sidenav_id.classList.toggle("active");
+        }
+
     </script>
 </body>
 </html>
