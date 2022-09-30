@@ -16,11 +16,31 @@
 
     <style>
         html{scroll-behavior: smooth;}
-        #AHero{ background: url('../assets/bgs/fahero.jpg'); background-attachment: fixed;}
         #ApuntesDiv{background-image: url('media/space.jpg');}
         #RussiaFlag{ max-width: 25px;}
         .apuntes-send{color: #ff7777;}
         .mlaq-title{letter-spacing: 7px;}
+
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -100;
+        }
+
+        #HeaderVideo {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            background: #232a34;
+        }
 
         /* Mobile */
         @media (max-width: 640px) {
@@ -72,17 +92,25 @@
 
 </head>
 <body class="m3-space-gray">
-    <header class="m3-container-fw m3-full-screen m3-parallax m3-text-white" id="AHero">
+
+    <div class="video-container">
+        <video autoplay="" muted="" loop="" id="HeaderVideo">
+            <source src="media/bg.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <header class="m3-container-fw m3-full-screen m3-parallax m3-text-white">
         <div class="m3-padding">
-            <span id="TimeWelcome" class="m3-black crystal m3-mobile-small m3-padding-2x"></span>
+            <span id="TimeWelcome" class="m3-black crystal-5 m3-mobile-small m3-padding-2x"></span>
         </div>
 
-        <section class="m3-display-left m3-w-100-mobile m3-w-75-tablet m3-w-50-desktop">
+        <section class="m3-display-middle m3-w-100-mobile m3-w-75-tablet m3-w-50-desktop">
             <article class="m3-media items-center">
                 <img src="../assets/acila-no-txt.png" class="m3-media-figure" id="HeroLogo">
                 <section class="m3-media-content m3-padding-left-2x" id="ACILA">
-                    <h2>Formación Académica</h2>
-                    <h3 class="lt-txt-orange-1 animate__animated animate__lightSpeedInRight">Ningún conocimiento humano puede ir más allá de su experiencia.</h3>
+                    <h2 class="m3-margin-bottom-3x"><span class="m3-bar-bottom m3-border-gold m3-padding-bottom">Formación Académica</span> </h2>
+                    <h4 class="animate__animated animate__lightSpeedInRight">Ningún conocimiento humano puede ir más allá de su experiencia.</h4>
                 </section>
             </article>
         </section>
@@ -90,22 +118,20 @@
         <span class="m3-display-bottom m3-w-100 m3-text-center m3-padding-2x m3-black crystal-5">
             <figure>
                 <img src="../assets/acila-txt.png" class="m3-margin-right m3-circle logo-hero-footer">
-                <a href="../index.html" class="m3-hover-text-gold"><i class="m3-desktop-large m3-mobile-small">ASOCIACIÓN HISPANOHABLANTES LATINOAMERICANOS</i></a>
+                <i class="m3-desktop-large m3-mobile-small">ASOCIACIÓN HISPANOHABLANTES LATINOAMERICANOS</i>
             </figure>
         </span>
     </header>
 
 
     <div class="m3-btn-group m3-mobile-show m3-margin-bottom-4x">
-        <a class="m3-btn m3-w-100 m3-transparent m3-border m3-border-skyblue" href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ"><i class="fa-solid fa-cloud"></i> Base de Datos</a>
-        <a class="m3-btn m3-w-100 m3-transparent m3-border m3-border-emerald" href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT" href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT"> <i class="fa-brands fa-whatsapp" style="font-size: 20px; vertical-align: middle;"></i> Canal informativo </a>
+        <a class="m3-btn m3-transparent m3-border m3-hover-border-white" href="../index.html"> <i class="fa-solid fa-arrow-left" style="font-size: 20px; vertical-align: middle;"></i> Volver al inicio </a>
         <a class="m3-btn m3-w-100 m3-transparent m3-border m3-border-fuchsia" href="https://www.instagram.com/acila_fefu/"> <i class="fa-brands fa-instagram" style="font-size: 20px; vertical-align: middle;"></i> Síguenos </a>
     </div>
 
-    <nav class="m3-container m3-margin-bottom-2x">
+    <nav class="m3-container m3-vertical-margin-2x">
         <section class="m3-navcard-content">
-            <a class="m3-btn m3-transparent m3-border m3-hover-border-skyblue" href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ" > <i class="fa-solid fa-cloud" style="font-size: 20px; vertical-align: middle;"></i> Base de Datos</a>
-            <a class="m3-btn m3-transparent m3-border m3-hover-border-emerald" href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT"> <i class="fa-brands fa-whatsapp" style="font-size: 20px; vertical-align: middle;"></i> Canal informativo </a>
+            <a class="m3-btn m3-transparent m3-border m3-hover-border-white" href="../index.html"> <i class="fa-solid fa-arrow-left" style="font-size: 20px; vertical-align: middle;"></i> Volver al inicio </a>
             <a class="m3-btn m3-transparent m3-border m3-hover-border-fuchsia" href="https://www.instagram.com/acila_fefu/"> <i class="fa-brands fa-instagram" style="font-size: 20px; vertical-align: middle;"></i> Síguenos </a>
         </section>
     </nav>
@@ -116,8 +142,8 @@
         <article class="mlaq-title">
             <h1 class="m3-text-gradient-vintage" style="letter-spacing: 5px;">SECTOR MLAQ</h1>
             <p class="">
-                Matemática, Latin, Anatomía, Química. <br>
-                TODO EN UN MISMO LUGAR.
+                Recursos de Matemática, Latin, Anatomía y Química. <br>
+                Las materias cursadas con mayor frecuencia por los estudiantes latinos que vienen a la FEFU.
             </p>
         </article>
 
@@ -128,7 +154,7 @@
                     <div class="m3-card-content">
                         <h2 class="mlaq-title">MATEMÁTICA</h2>
                         <p>
-                            <a class="m3-bold m3-large m3-text-yellow" style="letter-spacing: 7px;" href="#">
+                            <a class="m3-bold m3-large m3-text-yellow" style="letter-spacing: 7px;" href="mlaq/m.html">
                                 VER MÁS
                                 <i class="fa-solid fa-angle-right"></i>
                             </a>
