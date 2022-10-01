@@ -1,0 +1,91 @@
+html{scroll-behavior: smooth;}
+body{background-color: #f5f5f5; color: #252525;}
+
+.landingbg{
+    background-image: url('../bgs/particlesb.jpg'); color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Mobile */
+@media (max-width: 640px) {
+    #AcilaCP{
+        width: 150px;
+    }
+
+    #OptBar{
+        text-align: center;
+    }
+
+    #OptBar article{
+        max-width: 100%;
+    }
+
+    #AcilaLandingLogo{
+        width: 200px;
+    }
+
+    #AcilaPpl{
+        width: 750px;
+    }
+
+    #AcilaLandingTXT{
+        width: 300px;
+    }
+    
+
+    #AcilaLandingPhrase{
+        font-size: 1.6rem;
+    }
+}
+
+/* Phablet / Tablet */
+@media (min-width: 641px) and (max-width: 1084px) {
+    #AcilaCP{
+        width: 250px;
+    }
+
+    #OptBar article{
+        max-width: 150px;
+    }
+
+    #AcilaLandingLogo{
+        width: 300px;
+    }
+
+    #AcilaPpl{
+        width: 750px;
+    }
+
+    #AcilaLandingTXT{
+        width: 350px;
+    }
+
+    #EventsNews{
+        padding: 0.3rem;
+    }
+}
+
+/* Desktop / TV */
+@media (min-width: 1100px) {
+    #AcilaCP{
+        width: 250px;
+    }
+
+    #OptBar article{
+        max-width: 150px;
+    }
+
+    #AcilaLandingLogo{
+        width: 350px;
+    }
+
+    #AcilaPpl{
+        width: 750px;
+    }
+
+    #AcilaLandingTXT{
+        width: 300px;
+    }
+}

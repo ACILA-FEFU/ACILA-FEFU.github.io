@@ -13,33 +13,16 @@
     <link href="assets/loader/loader.css" rel="stylesheet"/>
     <link href="assets/timeline/timeline.css" rel="stylesheet"/>
     <link href="assets/css/paleta.css" rel="stylesheet"/>
+    <link href="assets/css/rsp.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <style>
-        html{scroll-behavior: smooth;}
-        body{background-color: #202020; color: #fff;}
 
-        #LandingBG{
-            background-image: url('assets/bgs/particlesb.jpg'); color: #fff;
-            background-size: cover;
-            background-attachment: fixed;
-        }
 
-        /* Mobile */
-        @media (max-width: 640px) {
 
-        }
 
-        /* Phablet / Tablet */
-        @media (min-width: 641px) and (max-width: 1024px) {
 
-        }
-
-        /* Desktop / TV */
-        @media (min-width: 1100px) {
-
-        }
 
     </style>
 
@@ -61,31 +44,34 @@
     </button>
 
     <figure class="m3-padding-2x m3-margin-top">
-        <img src="assets/acila-txt-black.png" id="AcilaCP" style="width: 250px;"> Panel de Control
+        <img src="assets/acila-txt-black.png" id="AcilaCP"> <span class="m3-mobile-small">Panel de Control</span>
     </figure>
 
-    <section class="m3-card-deck margins">
-
-        <article class="m3-card m3-silver m3-border" style="max-width: 150px;">
+    <section class="m3-card-deck margins" id="OptBar">
+        
+        <article class="m3-card m3-silver m3-border">
             <span class="m3-card-media">☁️</span>
             <div class="m3-card-content m3-white m3-text-center">
                 <a class="m3-hover-text-gold" href="https://drive.google.com/drive/folders/1zhhWBavOVL8whTkp0YJKeTr6l2jOgzAZ">Archivos</a>
             </div>
         </article>
-
-        <article class="m3-card m3-silver m3-border" style="max-width: 150px;">
+        
+        
+        <article class="m3-card m3-silver m3-border">
             <span class="m3-card-media"><i class="fa-brands fa-whatsapp"></i></span>
             <div class="m3-card-content m3-white m3-text-center">
-                <a class="m3-hover-text-gold" href="https://chat.whatsapp.com/Kvm3yvb7VZD7aCDu0XXnbe"> Información </a>
+                 <a class="m3-hover-text-gold" href="https://chat.whatsapp.com/Kvm3yvb7VZD7aCDu0XXnbe">Información</a>
             </div>
         </article>
 
-        <article class="m3-card m3-silver m3-border" style="max-width: 150px;">
+
+        <article class="m3-card m3-silver m3-border">
             <span class="m3-card-media"><i class="fa-brands fa-whatsapp"></i></span>
             <div class="m3-card-content m3-white m3-text-center">
-                <a class="m3-hover-text-gold" href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT"> General </a>
+                 <a class="m3-hover-text-gold" href="https://chat.whatsapp.com/FCCG8Zs5Zu3LVRxhmaQSWT">General</a>
             </div>
         </article>
+  
     </section>
 
     <section class="m3-padding">
@@ -202,7 +188,7 @@
 
 
 <main id="main">
-    <article class="m3-padding-top-3x m3-container-fw" id="LandingBG">
+    <article class="m3-container-fw landingbg">
 
         <button class="m3-display-top-left m3-padding-2x" onclick="OverlayContent('Sidenav');">
             <i class="fa-solid fa-bars fa-2x m3-bold"></i>
@@ -210,21 +196,21 @@
 
         <div class="m3-w-100">
             <figure class="m3-text-center">
-                <img src="assets/acila-no-txt.png" width="350">
-                <h1 class="m3-text-center m3-vertical-margin-2x m3-text-shadow">Un pedazo de tierra latina en Vladivostok</h1>
+                <img src="assets/acila-no-txt.png" id="AcilaLandingLogo">
+                <h1 class="m3-text-center m3-vertical-margin-2x m3-text-shadow" id="AcilaLandingPhrase">Un pedazo de tierra latina en Vladivostok</h1>
             </figure>
         </div>
 
         <figure class="m3-text-center m3-margin-top-3x">
-            <img src="assets/landing.png">
+            <img src="assets/landing.png" id="AcilaPpl">
         </figure>
 
-        <nav class="m3-nav moda-2">
+        <nav class="m3-nav m3-black">
             <header class="m3-nav-brand">
                 <div class="m3-row no-gutters">
                     <div class="m3-item m3-center">
                         <figure>
-                            <img src="assets/acila-txt.png" width="400" class="">
+                            <img src="assets/acila-txt.png" id="AcilaLandingTXT">
                         </figure>
                     </div>
                 </div>
@@ -235,20 +221,20 @@
 
     
 
-    <article class="m3-jumbo">
+    <article class="m3-jumbo" id="EventsNews">
         
 
         <article class="m3-row justify-center m3-margin-bottom-4x">
 
             <section class="m3-item l3 m4">
-                <h2 class="m3-margin-bottom-4x moda-txt-3">Eventos</h2>
+                <h2 class="m3-margin-bottom-4x lt-txt-blue-1"> <i class="fa-solid fa-clipboard-list fa-bounce"></i> Eventos</h2>
 
                 <div class="timeline">
                     <div class="events">
                     <div class="event">
                         <div class="knob"></div>
                         
-                        <article class="m3-media m3-round lt-orange-1">
+                        <article class="m3-media m3-round m3-grey">
                             <img src="https://www.mouawad.com/images/mouawad-miss-universe/miss-universe-2021-listpage.jpg" class="m3-media-figure" width="100">
                             <section class="m3-media-content">
                                 <h4>Miss Gran Latina</h4>
@@ -261,12 +247,12 @@
                     <div class="event">
                         <div class="knob"></div>
                         
-                        <article class="m3-media m3-round lt-orange-1">
+                        <article class="m3-media m3-round m3-grey">
                             <img src="assets/eventos/fiesta/fiestalatina.jpg" class="m3-media-figure" width="100">
                             <section class="m3-media-content">
                                 <h4>Fiestas Latinas</h4>
                                 <p class="date"><i class="fas fa-calendar"></i>  Miércoles previo aviso en <br><i class="fa-solid fa-location-dot"></i>
-                                    <a href="https://www.google.com/search?q=kooperativ%20vladivostok&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=ALiCzsbfnFlLff5k6LWxLdeOiAchrVnuhQ:1664525601129&rflfq=1&num=10&rldimm=12654832840598557025&lqi=ChZrb29wZXJhdGl2IHZsYWRpdm9zdG9rSOSCirnitoCACFoeEAAYABgBIhZrb29wZXJhdGl2IHZsYWRpdm9zdG9rkgEJZ2FzdHJvcHViqgESEAEqDiIKa29vcGVyYXRpdigN&phdesc=Pef43MfDJio&ved=2ahUKEwic2rKJibz6AhWnmIQIHddFCKwQvS56BAgWEA0&sa=X&rlst=f#rlfi=hd:;si:12654832840598557025,l,ChZrb29wZXJhdGl2IHZsYWRpdm9zdG9rSOSCirnitoCACFoeEAAYABgBIhZrb29wZXJhdGl2IHZsYWRpdm9zdG9rkgEJZ2FzdHJvcHViqgESEAEqDiIKa29vcGVyYXRpdigN,y,Pef43MfDJio;mv:[[43.163867499999995,131.9150654],[43.1185323,131.8759284]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9">Кооператив</a>
+                                    <a class="moda-txt-3" href="https://www.google.com/search?q=kooperativ%20vladivostok&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=ALiCzsbfnFlLff5k6LWxLdeOiAchrVnuhQ:1664525601129&rflfq=1&num=10&rldimm=12654832840598557025&lqi=ChZrb29wZXJhdGl2IHZsYWRpdm9zdG9rSOSCirnitoCACFoeEAAYABgBIhZrb29wZXJhdGl2IHZsYWRpdm9zdG9rkgEJZ2FzdHJvcHViqgESEAEqDiIKa29vcGVyYXRpdigN&phdesc=Pef43MfDJio&ved=2ahUKEwic2rKJibz6AhWnmIQIHddFCKwQvS56BAgWEA0&sa=X&rlst=f#rlfi=hd:;si:12654832840598557025,l,ChZrb29wZXJhdGl2IHZsYWRpdm9zdG9rSOSCirnitoCACFoeEAAYABgBIhZrb29wZXJhdGl2IHZsYWRpdm9zdG9rkgEJZ2FzdHJvcHViqgESEAEqDiIKa29vcGVyYXRpdigN,y,Pef43MfDJio;mv:[[43.163867499999995,131.9150654],[43.1185323,131.8759284]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9">Кооператив</a>
                                 </p>
                             </section>
                         </article>
@@ -276,7 +262,7 @@
                     <div class="event">
                         <div class="knob"></div>
                         
-                        <article class="m3-media m3-round lt-orange-1">
+                        <article class="m3-media m3-round m3-grey">
                             <img src="assets/eventos/ecomoda/1.jpg" class="m3-media-figure" width="100">
                             <section class="m3-media-content">
                                 <h4>Ecomoda</h4>
@@ -291,9 +277,9 @@
                 </div>
             </section>
 
-            <section class="m3-item l7 m7">
+            <section class="m3-item l8 m8">
                 <article class="m3-margin-bottom">
-                    <h3 class="moda-txt-3">Elecciones 2022</h3>
+                    <h2 class="lt-txt-blue-1"><i class="fa-regular fa-chess-queen"></i> Elecciones 2022</h2>
                     <p>
                         El viernes 29 de abril tuvimos la oportunidad de escoger a nuestros nuevos representantes, quienes continuarán moldeando esta organización
                         a fin de ser más eficientes al momento de apoyar a los estudiantes latinos de la
@@ -325,7 +311,7 @@
                 </article>
 
                 <article>
-                    <h3 class="moda-txt-3">¡Nuestra gran inauguración oficial!</h3>
+                    <h2 class="lt-txt-blue-1"><i class="fa-solid fa-champagne-glasses"></i> ¡Nuestra gran inauguración oficial!</h2>
                     <p>
                     La inauguración de nuestra asociación tuvo lugar en el Edificio A de la FEFU el 26 de octubre del 2019. Los invitados pudieron disfrutar de un grandioso evento, 
                     que estuvo lleno de actividades, premios y bailes hechos con mucha dedicación y cariño.
@@ -339,15 +325,15 @@
                 </article>
             </section>
 
-            <section class="m3-item l10 s12 m10">
+            <section class="m3-item l11 s12 m10">
                 <article class=" m3-vertical-margin-2x">
-                    <h3 class="moda-txt-3">Anuncios</h3>
+                    <h2 class="lt-txt-blue-1"><i class="fa-solid fa-walkie-talkie fa-bounce"></i> Anuncios</h2>
                     
-                    <figure class="m3-container-fw m3-margin-top-4x" style="max-width: 900px;">
-                        <div class="m3-display-middle m3-padding m3-w-100-mobile m3-mobile-tiny">
+                    <figure class="m3-container-fw m3-margin-top-4x" style="max-width: 1000px;">
+                        <div class="m3-display-middle m3-text-white m3-padding-2x m3-w-100 m3-text-center m3-mobile-tiny">
                             <h3>Participa como voluntario de ACILA</h3>
                             <p>Forma parte de la asociación encargada de velar por los latinos que estudian en FEFU</p>
-                            <a class="m3-btn m3-emerald" href="#">Solicitar Unirme</a>
+                            <a class="m3-btn moda-1 m3-text-white" href="#">Solicitar Unirme</a>
                         </div>
                         <img src="assets/collage/8.jpg" class="m3-w-100 m3-h-100">
                     </figure>
@@ -358,7 +344,7 @@
     </article>
     
 
-    <article class="m3-jumbo" style="background-color: #171717;">
+    <article class="m3-jumbo landingbg">
         <h2 class="m3-text-center moda-txt-3">Departamentos</h2>
         <article class="m3-row m3-vertical-margin-4x m3-mobile-small">
             <div class="m3-item m3-text-center ">
@@ -422,16 +408,16 @@
         </article>
     </article>
 
-    <header class="m3-container-fw m3-parallax m3-text-white">
+    <header class="m3-container-fw">
         <div class="m3-padding-2x">
             <section class="">
             
-                <section class="m3-row m3-text-white" id="Nosotros">
+                <section class="m3-row m3-margin-bottom-4x" id="Nosotros">
                     <div class="m3-item m3-border-bottom">
-                        <h1 class="m3-margin-bottom-2x moda-txt-3">Un poco más acerca de nosotros </h1>
+                        <h1 class="m3-margin-bottom-2x lt-txt-orange-1">Un poco más acerca de nosotros </h1>
                     </div>
                 </section>
-                <section class="m3-row m3-text-white">
+                <section class="m3-row">
         
                     <div class="m3-item">
                         <h2 class="m3-margin-bottom-4x"><i class="fa-solid fa-code-fork m3-text-gradient-vintage"></i> Misión </h2>
@@ -551,6 +537,9 @@
 
                 <section class="m3-card-deck margins m3-center m3-margin-top-3x">
 
+                    <section class="m3-card round" style="max-width: 400px;">
+                    </section>
+
                     <section class="m3-card m3-white round" style="max-width: 400px;">
                         <header class="m3-container-fw m3-h-100">
                             <img src="assets/lideres/lider-cult.jpg" class="m3-card-media">
@@ -581,6 +570,9 @@
                             <button class="m3-large m3-border m3-padding m3-circle m3-shadow"
                             style="width: 55px; height: 55px;"><a href="https://www.instagram.com/Nosiatlala/"><i class="fa-brands fa-instagram m3-large"></i></a></button>
                         </article>
+                    </section>
+
+                    <section class="m3-card round" style="max-width: 400px;">
                     </section>
         
                 </section>
@@ -615,7 +607,7 @@
 
 
     <article class="m3-jumbo">
-        <h2 class="m3-margin-bottom-4x m3-text-center">Agradecimientos especiales <i class="fa-solid fa-hand-peace fa-bounce m3-text-gradient-vintage"></i></h2>
+        <h2 class="m3-margin-bottom-4x m3-text-center m3-text-gradient-vintage">Agradecimientos especiales <i class="fa-solid fa-hand-peace fa-bounce m3-text-gradient-vintage"></i></h2>
         
 
         <article class="m3-text-center">
